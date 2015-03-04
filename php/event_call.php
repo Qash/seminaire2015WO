@@ -1,7 +1,7 @@
 <?php
 
 include_once("connexion.inc");
-	header('Content-Type: text/html; charset=utf-8');
+	
 	
 	$requete = "SELECT * FROM `events` ";
 	
@@ -29,6 +29,6 @@ include_once("connexion.inc");
 		 $row_array['campus'] = $row['campus'];
 		 $json_response[] = 'ééé'; 
 	}
-	
+	header('Content-Type: text/html; charset=utf-8');
 	echo json_encode($json_response);
 ?>
