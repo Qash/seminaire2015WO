@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/stylesheet.css"/>
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<title>Service Culturel Paris 13</title>
 	</head>
 	<body>
@@ -30,6 +33,17 @@
 			<div ng-show="campusFilterCtrl.chkFilter('vil')">1</div>
 			<div ng-show="campusFilterCtrl.chkFilter('bob')">2</div>
 			<div ng-show="campusFilterCtrl.chkFilter('hlm')">3</div>
+			<div ng-show="campusFilterCtrl.chkFilter(1)">1</div>
+			<div ng-show="campusFilterCtrl.chkFilter(2)">2</div>
+			<div ng-show="campusFilterCtrl.chkFilter(3)">3</div>
+			
+			<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+				<div class="item"><img src="img/fullimage1.jpg" alt="The Last of us"></div>
+				<div class="item"><img src="img/fullimage2.jpg" alt="GTA V"></div>
+				<div class="item"><img src="img/fullimage3.jpg" alt="Mirror Edge"></div>
+ 
+			</div>
 		</main>
 		<footer>
 

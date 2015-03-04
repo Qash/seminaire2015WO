@@ -43,3 +43,10 @@ li {
 #campusFilter .truc{
 	background-color: yellow;
 }
+
+/* CARROUSEL */
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
