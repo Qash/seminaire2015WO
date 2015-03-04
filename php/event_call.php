@@ -3,7 +3,7 @@
 include_once("connexion.inc");
 	
 	
-	$requete = "SELECT * FROM `events` ";
+	$requete = "SELECT `name` FROM `events` WHERE name = 'Autarcie'";
 	
 	try {
 	$response = $connexion->prepare($requete);
@@ -18,18 +18,11 @@ include_once("connexion.inc");
 
 	$row_array = array();
 	$json_response = array();
-	$string = 'é';
-	utf8_encode($string);
+
 	foreach($data as $row) {
 		 $row_array['name'] = $row['name'];
-		 $row_array['date_debut'] = $row['date_debut'];
-		 $row_array['duration'] = $row['duration'];
-		 $row_array['location'] = $row['location'];
-		 $row_array['preview'] = $row['preview'];
-		 $row_array['hour'] = $row['hour'];
-		 $row_array['campus'] = $row['campus'];
-		 $json_response[] = $string; 
+		 $json_response[] = $row_array; 
 	}
 	
-	print_r ($json_response);
+	print_r ($row_array);
 ?>
