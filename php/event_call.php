@@ -3,7 +3,7 @@
 include_once("connexion.inc");
 	
 	
-	$requete = "SELECT `name` FROM `events` WHERE name = 'Autarcie'";
+	$requete = "SELECT `name` FROM `events`";
 	
 	try {
 	$response = $connexion->prepare($requete);
