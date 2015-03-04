@@ -18,7 +18,7 @@
 		};
 	});
 	app.controller('TestController', ['$scope', '$http', function ($scope, $http) {
-    $http.get('http://www.w3schools.com/website/Customers_JSON.php').success(function(data) {
+    $http.get('php/event_call.php').success(function(data) {
         $scope.events = data;
     });
 }]);
