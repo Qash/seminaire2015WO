@@ -2,7 +2,7 @@
 
 include_once("connexion.inc");
 
-	$requete = "SELECT * FROM events";
+	$requete = "SELECT * FROM `events` ";
 	
 	try {
 	$response = $connexion->prepare($requete);
