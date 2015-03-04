@@ -29,5 +29,5 @@ include_once("connexion.inc");
 				//push the values in the array
 		array_push($json_response,$row_array);
 	}
-	echo ('proute');
+	echo json_encode($json_response);
 ?>
