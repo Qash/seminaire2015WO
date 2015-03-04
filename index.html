@@ -50,15 +50,15 @@
 					function CampusFilterController($scope,$http) {
     				$http.get("http://www.w3schools.com/website/Customers_JSON.php").success(function(response){$scope.events = response;});}
 </script>
-				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events" >{{events.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
-				<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'bob'}">{{events.name}}</div> <!-- EVENEMENTS BOBIGNY -->
-				<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'hlm'}">{{events.name}}</div> <!-- EVENEMENTS HLM -->
+				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+				<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'bob'}">{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
+				<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'hlm'}">{{event.name}}</div> <!-- EVENEMENTS HLM -->
 				<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
 				
 			</section>
 		</main>
 		<footer ng-controller='TestController'>
-				<div ng-repeat="event in TestController.events" >{{events.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+				<div ng-repeat="event in TestController.events" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
 		</footer>
 	</body>
 </html>
