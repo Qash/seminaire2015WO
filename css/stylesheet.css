@@ -47,6 +47,19 @@ li {
 /* CARROUSEL */
 #owl-demo .item img{
     display: block;
-    width: 100%;
-    height: auto;
+}
+
+#owl-demo{
+	width: 70%;
+	margin: auto;
+	border:solid 5px white;
+	-moz-box-shadow: inset 0px 0px 20px 0px #656565;
+-webkit-box-shadow: inset 0px 0px 20px 0px #656565;
+-o-box-shadow: inset 0px 0px 20px 0px #656565;
+box-shadow: inset 0px 0px 20px 0px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=20);
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+	background-color: white;
 }

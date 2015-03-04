@@ -1,6 +1,6 @@
 // ANGULAR
 (function(){
-	var app=angular.module('serviceCulturel', []);
+	var app=angular.module('serviceCulturel', ['angular.filter']);
 
 	// CONTROLEUR FILTRES CAMPUS 
 	app.controller('CampusFilterController', function(){
@@ -17,10 +17,9 @@
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 		};
 	});
-	app.controller('ContentCtrl', ['$scope', '$http', function ($scope, $http) {
-    $http.get('http://lamp-pedago/')
-    .success(function(data) {
-        $scope.contents = data;
+	app.controller('TestController', ['$scope', '$http', function ($scope, $http) {
+    $http.get('http://www.w3schools.com/website/Customers_JSON.php').success(function(data) {
+        $scope.events = data;
     });
 }]);
 	// End

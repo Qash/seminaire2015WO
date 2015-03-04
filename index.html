@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/owl.theme.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.4/angular-filter.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<title>Service Culturel Paris 13</title>
@@ -44,14 +45,20 @@
 			</section>
 
 			<!-- EVENEMENTS -->
-			<section id="eventContainer">
-				<div ng-show="campusFilterCtrl.chkFilter('vil')">1</div> <!-- EVENEMENTS VILLETANEUSE -->
-				<div ng-show="campusFilterCtrl.chkFilter('bob')">2</div> <!-- EVENEMENTS BOBIGNY -->
-				<div ng-show="campusFilterCtrl.chkFilter('hlm')">3</div> <!-- EVENEMENTS HLM -->
+			<section id="eventContainer" >
+				<script>
+					function CampusFilterController($scope,$http) {
+    				$http.get("http://www.w3schools.com/website/Customers_JSON.php").success(function(response){$scope.events = response;});}
+</script>
+				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events" >{{event.Name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+				<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'bob'}">{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
+				<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'hlm'}">{{event.name}}</div> <!-- EVENEMENTS HLM -->
+				<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
+				
 			</section>
 		</main>
-		<footer>
-
+		<footer ng-controller='TestController'>
+				<div ng-repeat="event in TestController.events" >{{event.Name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
 		</footer>
 	</body>
 </html>

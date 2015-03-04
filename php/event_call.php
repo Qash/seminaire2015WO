@@ -30,7 +30,17 @@ include_once("connexion.inc");
 		array_push($json_response,$row_array);
 	}
 
-
 	echo json_encode($json_response);
 			
 ?>
+<!doctype html>
+<html lang=fr>
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv='Content-Type' content='application/json'>
+		<title>title</title>
+	</head>
+	<body>
+		
+	</body>
+</html>
