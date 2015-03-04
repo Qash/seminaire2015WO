@@ -25,22 +25,43 @@
 	// End
 })();
 
-/* CARROUSEL */
+
+
 $(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-	  autoPlay : 6000,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
+	
+	if(window.location.hash=='')
+		var curPage = '#accueil';
+	else
+		var curPage = window.location.hash;
+	changePage(curPage);
+	
+	function changePage(arg){
+		$(".accueil").fadeTo(500,0,"swing");
+		$('.accueil').css('display', 'none');
+		$(".inscription").fadeTo(500,0,"swing");
+		$('.inscription').css('display', 'none');
+		$(".information").fadeTo(500,0,"swing");
+		$('.information').css('display', 'none');
+		$(".ateliers").fadeTo(500,0,"swing");
+		$('.ateliers').css('display', 'none');
+		$("."+arg.substring(1)).css('display', 'block');
+		$("."+arg.substring(1)).fadeTo(500,1,"swing");
+	}	
+	
+	/* CARROUSEL */
+	$("#owl-demo").owlCarousel({
+	 
+		autoPlay : 6000,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	 
+		// "singleItem:true" is a shortcut for:
+		// items : 1, 
+		// itemsDesktop : false,
+		// itemsDesktopSmall : false,
+		// itemsTablet: false,
+		// itemsMobile : false
+	 
+	  });
 });

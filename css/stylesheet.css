@@ -36,6 +36,10 @@ li {
 	background-color: lightsalmon;
 }
 
+#navSite ul li a {
+	color:black;
+}
+
 #campusFilter{
 	width: 100%;
 	text-align: center;
@@ -67,4 +71,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 -webkit-border-radius: 10px;
 border-radius: 10px;
 	background-color: white;
+}
+
+/* PRESENTATION */
+
+#presentationContainer{
+	margin-left:5%;
+	margin-right:5%;
+}
+
+#presentationListe li{
+	display : block;
 }
