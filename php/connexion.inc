@@ -2,7 +2,10 @@
 	include_once("bd.inc");
 	
 	try {
-		$connexion = new PDO("mysql:host=".HOTE.";dbname=".BD, USER, MDP; charset=utf8);
+		$options = array(
+		 PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+		);
+		$connexion = new PDO("mysql:host=".HOTE.";dbname=".BD, USER, MDP, $options);
 	}
 	catch (Exception $e) {
 		echo "erreur : ".$e->getMessage()."<br />";
