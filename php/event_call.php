@@ -31,5 +31,5 @@ include_once("connexion.inc");
 		 $json_response[] = $string; 
 	}
 	
-	echo json_encode($json_response);
+	echo ($json_response);
 ?>
