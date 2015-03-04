@@ -22,14 +22,14 @@
 		<main ng-controller="CampusFilterController as campusFilterCtrl">
 			<nav id="campusFilter">
 				<ul>
-					<li ng-class="{ truc: campusFilterCtrl.chkFilter(1) }"><a ng-click="campusFilterCtrl.setFilter(1)" href="#">Villetaneuse</a></li>
-					<li ng-class="{ truc: campusFilterCtrl.chkFilter(2) }"><a ng-click="campusFilterCtrl.setFilter(2)" href="#">Villetaneuse</a></li>
-					<li ng-class="{ truc: campusFilterCtrl.chkFilter(3) }"><a ng-click="campusFilterCtrl.setFilter(3)" href="#">Villetaneuse</a></li>
+					<li ng-class="{ 'truc': campusFilterCtrl.chkFilter('vil') }"><a ng-click="campusFilterCtrl.toggleFilter('vil')" href="#">Villetaneuse</a></li>
+					<li ng-class="{ 'truc': campusFilterCtrl.chkFilter('bob') }"><a ng-click="campusFilterCtrl.toggleFilter('bob')" href="#">Bobigny</a></li>
+					<li ng-class="{ 'truc': campusFilterCtrl.chkFilter('hlm') }"><a ng-click="campusFilterCtrl.toggleFilter(hlm)" href="#">Hors les murs</a></li>
 				</ul>
 			</nav>
-			<div ng-show="campusFilterCtrl.chkFilter(1)">1</div>
-			<div ng-show="campusFilterCtrl.chkFilter(2)">2</div>
-			<div ng-show="campusFilterCtrl.chkFilter(3)">3</div>
+			<div ng-show="campusFilterCtrl.chkFilter('vil')">1</div>
+			<div ng-show="campusFilterCtrl.chkFilter('bob')">2</div>
+			<div ng-show="campusFilterCtrl.chkFilter('hlm')">3</div>
 		</main>
 		<footer>
 
