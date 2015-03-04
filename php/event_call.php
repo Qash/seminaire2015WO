@@ -1,7 +1,8 @@
 <?php
 
 include_once("connexion.inc");
-
+	header('Content-Type: text/html; charset=utf-8');
+	
 	$requete = "SELECT * FROM `events` ";
 	
 	try {
