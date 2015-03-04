@@ -1,0 +1,45 @@
+body{
+	background-color: tomato;
+	width: 100%;
+	margin:0;
+}
+header{
+	margin-bottom: 50px;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ display: block;
+ padding: 5px;
+}
+
+li {
+	display: inline;
+ 	margin-left:10px;
+ 	padding: 5px;
+}
+
+#navSite{
+	width: 100%;
+	text-align: center;
+	background-color: lightsalmon;
+}
+
+#campusFilter{
+	width: 100%;
+	text-align: center;
+}
+
+#campusFilter li{
+	background-color: lightsalmon;
+	border-radius: 5px;
+}
+ng-truc{
+	background-color: yellow;
+}
