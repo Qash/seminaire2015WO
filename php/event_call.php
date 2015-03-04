@@ -1,9 +1,3 @@
-<!doctype html>
-<html>
-	<head>
-	<meta charset="utf-8">
-	</head>
-</html>
 <?php
 
 include_once("connexion.inc");
@@ -35,6 +29,6 @@ include_once("connexion.inc");
 		 $row_array['campus'] = $row['campus'];
 		 $json_response[] = 'ééé'; 
 	}
-	header('Content-Type: text/html; charset=utf-8');
+	utf8_encode($json_response);
 	echo json_encode($json_response);
 ?>
