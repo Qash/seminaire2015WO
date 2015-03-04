@@ -26,7 +26,7 @@ $(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
  
-      navigation : true, // Show next and prev buttons
+	  autoPlay : 6000,
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true
