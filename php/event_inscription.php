@@ -4,7 +4,7 @@ $_SESSION['id_user'] = 11302484;
 	include_once("connexion.inc");
 
 if(isset($_SESSION['id_user'])) {
-		$requete = "SELECT * FROM user where id_user = '".$_SESSION['id_user']."'";
+	$requete = "SELECT * FROM user where id_user = '".$_SESSION['id_user']."'";
 	
 	try {
 	$response = $connexion->prepare($requete);
@@ -37,8 +37,26 @@ if(isset($_SESSION['id_user'])) {
 	if($sc == 'oui') {
 		if(isset($_POST['submit']) && isset($_POST['event'])) {
 
-			$req = "INSERT INTO  `11402421-seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
+			$requete = "SELECT * FROM events where name = '".$_POST['event']."'";
 
+				try {
+				$response = $connexion->prepare($requete);
+				$response->execute();
+				}
+				catch (Exception $e) {
+					echo $e->getMessage();
+				}
+				
+				$data = $response->fetchAll();
+
+				foreach($data as $row) {
+					$bd_event = $row['name'];
+					if($bd_event == $row['name']) {
+						$req = "INSERT INTO  `11402421-seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
+					} else {
+						echo ("L'évènement pour lequel vous essayez de vous inscrire n'existe pas.");
+					}
+				}
 		} else {
 			echo('Vous avez essayé de vous conencter sans passer par la voix normale');
 		}
