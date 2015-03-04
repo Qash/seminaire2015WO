@@ -2,7 +2,7 @@
 
 include_once("connexion.inc");
 
-	$requete = "SELECT * FROM event WHERE login = '".$login."'";
+	$requete = "SELECT * FROM event";
 	
 	try {
 	$response = $connexion->prepare($requete);
@@ -28,7 +28,6 @@ include_once("connexion.inc");
 	}
 		//push the values in the array
 		array_push($json_response,$row_array);
-	}
 
 	echo json_encode($json_response);
 

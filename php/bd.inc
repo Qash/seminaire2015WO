@@ -1,8 +1,8 @@
 <?php
 
 define("HOTE", "lamp-pedago");
-define("USER","11302484");
-define("MDP","0111904007R");
-define("BD","11302484_jeu");
+define("USER","11402421");
+define("MDP","2503036006L");
+define("BD","11402421-seminaire2015WO");
 
 ?>
