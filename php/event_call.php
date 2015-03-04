@@ -1,3 +1,9 @@
+<!dcotype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	</head>
+</html>
 <?php
 
 include_once("connexion.inc");
