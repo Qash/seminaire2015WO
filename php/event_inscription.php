@@ -35,7 +35,7 @@ if(isset($_SESSION['id_user'])) {
 	}
 
 	if($sc == 'oui') {
-		if(isset($_POST['send']) && isset($_POST['event'])) {
+		if(isset($_POST['submit']) && isset($_POST['event'])) {
 
 			$req = "INSERT INTO  `11402421-seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
 
