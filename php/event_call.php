@@ -26,7 +26,6 @@ include_once("connexion.inc");
 		$row_array['preview'] = $row['preview'];
 		$row_array['hour'] = $row['hour'];
 		$row_array['campus'] = $row['campus'];
-				//push the values in the array
 		array_push($json_response,$row_array);
 	}
 	echo json_encode($json_response);
