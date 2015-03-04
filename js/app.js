@@ -3,7 +3,7 @@
 	var app=angular.module('serviceCulturel', ['angular.filter']);
 
 	// CONTROLEUR FILTRES CAMPUS 
-	app.controller('CampusFilterController', function(){
+	app.controller('CampusFilterController',['$scope','$http', function($scope,$http){
 		this.activeFilter =[];
 		this.events =[];
 		this.chkFilter = function(filterToChk){
@@ -15,13 +15,12 @@
 				this.activeFilter.push(filterToSet);
 			else
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
+			
 		};
-	});
-	app.controller('TestController', ['$scope', '$http', function ($scope, $http) {
-    $http.get('php/event_call.php').success(function(data) {
-        $scope.events = data;
-    });
-}]);
+			$http.get('http://ashdev.fr/seminaire2015WO/php/event_call.php').success(function(data) {
+        		$scope.events = data;
+    		});
+	}]);
 	// End
 })();
 
