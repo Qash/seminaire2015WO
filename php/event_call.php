@@ -29,5 +29,5 @@ include_once("connexion.inc");
 				//push the values in the array
 		array_push($json_response,$row_array);
 	}
-	echo json_encode($row_array['name']);
+	echo json_encode($row_array);
 ?>
