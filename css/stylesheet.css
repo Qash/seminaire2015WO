@@ -1,7 +1,12 @@
+@font-face {
+    font-family: Josefin;
+    src: url(font/JosefinSans-Regular.ttf);
+}
 body{
 	background-color: tomato;
 	width: 100%;
 	margin:0;
+	font-family : Josefin;
 }
 header{
 	margin-bottom: 50px;

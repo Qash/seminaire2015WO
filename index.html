@@ -39,9 +39,9 @@
 
 			<!-- CAROUSEL -->
 			<section id="owl-demo" class="owl-carousel owl-theme">
-				<div class="item"><img src="img/fullimage1.jpg" alt="The Last of us"></div>
-				<div class="item"><img src="img/fullimage2.jpg" alt="GTA V"></div>
-				<div class="item"><img src="img/fullimage3.jpg" alt="Mirror Edge"></div>
+				<div class="item"><img src="img/slide1.jpg" alt="The Last of us"></div>
+				<div class="item"><img src="img/slide2.jpg" alt="GTA V"></div>
+				<div class="item"><img src="img/slide3.jpg" alt="Mirror Edge"></div>
 			</section>
 
 			<!-- EVENEMENTS -->
@@ -50,14 +50,23 @@
 					function CampusFilterController($scope,$http) {
     				$http.get("http://www.w3schools.com/website/Customers_JSON.php").success(function(response){$scope.events = response;});}
 </script>
+<<<<<<< HEAD
 				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'vil'}">{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+=======
+				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+>>>>>>> origin/master
 				<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'bob'}">{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
 				<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'hlm'}">{{event.name}}</div> <!-- EVENEMENTS HLM -->
 				<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
 				
 			</section>
 		</main>
+<<<<<<< HEAD
 		<footer>
+=======
+		<footer ng-controller='TestController'>
+				<div ng-repeat="event in TestController.events" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+>>>>>>> origin/master
 		</footer>
 	</body>
 </html>
