@@ -5,7 +5,7 @@
 	// CONTROLEUR FILTRES CAMPUS 
 	app.controller('CampusFilterController', function(){
 		this.activeFilter =[];
-
+		this.events =[];
 		this.chkFilter = function(filterToChk){
 			return this.activeFilter.indexOf(filterToChk) !== -1;
 		};
@@ -17,7 +17,12 @@
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 		};
 	});
-
+	app.controller('ContentCtrl', ['$scope', '$http', function ($scope, $http) {
+    $http.get('http://lamp-pedago/')
+    .success(function(data) {
+        $scope.contents = data;
+    });
+}]);
 	// End
 })();
 
