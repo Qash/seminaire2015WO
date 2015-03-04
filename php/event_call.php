@@ -2,7 +2,7 @@
 
 include_once("connexion.inc");
 
-	$requete = "SELECT * FROM events";
+	$requete = "SELECT * FROM `events` ";
 	
 	try {
 	$response = $connexion->prepare($requete);
@@ -29,6 +29,5 @@ include_once("connexion.inc");
 				//push the values in the array
 		array_push($json_response,$row_array);
 	}
-	header('Content-Type: application/json');
-	echo json_encode($json_response);
+	echo json_encode($row_array['name']);
 ?>

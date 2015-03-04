@@ -65,6 +65,7 @@
 						<br />Foyer de l’Illustration / 1 rue de Chablis, 93017 Bobigny / 01 48 38 88 29</p>
 					</section>
 
+<<<<<<< HEAD
 					<!-- EVENEMENTS -->
 					<section id="eventContainer" >
 						<script>
@@ -92,6 +93,16 @@
 				<section class="information">
 					<h1>Restez informé !</h1>
 				</section>
+=======
+			<!-- EVENEMENTS -->
+			<section id="eventContainer" >
+				
+				<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'vil'}">{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+
+				<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'bob'}">{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
+				<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in campusFilterCtrl.events | where:{campus:'hlm'}">{{event.name}}</div> <!-- EVENEMENTS HLM -->
+				<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
+>>>>>>> origin/master
 				
 				<!-- ---------------- -->
 				<!-- PAGE ATELIERS -->
@@ -100,8 +111,7 @@
 					<h1>Présentation des ateliers</h1>
 				</section>
 		</main>
-		<footer ng-controller='TestController'>
-				<div ng-repeat="event in TestController.events" >{{event.Name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+		<footer>
 		</footer>
 	</body>
 </html>
