@@ -29,6 +29,5 @@ include_once("connexion.inc");
 				//push the values in the array
 		array_push($json_response,$row_array);
 	}
-	header('Content-Type: application/json');
 	echo json_encode($json_response);
 ?>
