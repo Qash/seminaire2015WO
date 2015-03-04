@@ -1,6 +1,8 @@
+// ANGULAR
 (function(){
 	var app=angular.module('serviceCulturel', []);
 
+	// CONTROLEUR FILTRES CAMPUS 
 	app.controller('CampusFilterController', function(){
 		this.activeFilter =[];
 
@@ -9,7 +11,10 @@
 		};
 
 		this.toggleFilter = function(filterToSet){
-			this.activeFilter.slice(filterToSet);
+			if(!this.chkFilter(filterToSet))
+				this.activeFilter.push(filterToSet);
+			else
+				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 		};
 	});
 
