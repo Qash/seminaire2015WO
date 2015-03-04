@@ -28,5 +28,5 @@ include_once("connexion.inc");
 		$row_array['campus'] = $row['campus'];
 		array_push($json_response,$row_array);
 	}
-	echo json_encode($row_array);
+	echo json_encode($json_response);
 ?>
