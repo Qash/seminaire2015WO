@@ -18,7 +18,8 @@ include_once("connexion.inc");
 
 	$row_array = array();
 	$json_response = array();
-
+	$string = 'é';
+	utf8_encode($string);
 	foreach($data as $row) {
 		 $row_array['name'] = $row['name'];
 		 $row_array['date_debut'] = $row['date_debut'];
@@ -27,8 +28,8 @@ include_once("connexion.inc");
 		 $row_array['preview'] = $row['preview'];
 		 $row_array['hour'] = $row['hour'];
 		 $row_array['campus'] = $row['campus'];
-		 $json_response[] = 'ééé'; 
+		 $json_response[] = $string; 
 	}
-	utf8_encode($json_response);
+	
 	echo json_encode($json_response);
 ?>
