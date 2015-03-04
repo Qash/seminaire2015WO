@@ -24,5 +24,5 @@ include_once("connexion.inc");
 		 $json_response[] = $row_array; 
 	}
 	
-	print_r ($row_array);
+	print_r ($json_response);
 ?>
