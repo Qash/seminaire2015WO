@@ -4,11 +4,12 @@
 }
 html, body{
 	background-color: whitesmoke;
-	width: 100%;
 	margin:0;
 	padding: 0;
 	height: 100%;
 	font-family : Josefin;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 h1 {
