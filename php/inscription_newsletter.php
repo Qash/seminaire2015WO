@@ -28,8 +28,6 @@ if(isset($_POST['submit'])){
 			
 			if($mail_exists !== true){
 				foreach($_POST['category'] as $cat) {
-					$connexion=$db->prepare('INSERT INTO RelPreferencies(mail, category) VALUES(:mail, :category)');
-					$connexion->execute(array (':mail' => $mail, ':category' => $cat));
 					echo ($cat." and ".$mail);
 
 				}
