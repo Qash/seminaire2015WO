@@ -71,7 +71,7 @@
 					<section id="eventContainer" >
 						<div ng-show="campusFilterCtrl.chkFilter('vil')">
 							<h1>Villetaneuse</h1>
-							<div id="[{{$index + 1}}]" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
+							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
 								<h2>{{event.name}}</h2>
 								<p class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p>Description : <br />{{event.description}}</p>
@@ -80,7 +80,7 @@
 						
 						<div ng-show="campusFilterCtrl.chkFilter('bob')">
 							<h1>Bobigny</h1>
-							<div id="[{{$index + 1}}]" class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
+							<div id="event{{$index + 1}}" class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
 								<h2>{{event.name}}</h2>
 								<p class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p>Description : <br />{{event.description}}</p>
@@ -88,7 +88,7 @@
 						</div>
 						<div ng-show="campusFilterCtrl.chkFilter('hlm')">
 							<h1>Hors les murs</h1>
-							<div id="[{{$index + 1}}]" class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
+							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
 								<h2>{{event.name}}</h2>
 								<p class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p>Description : <br />{{event.description}}</p>
