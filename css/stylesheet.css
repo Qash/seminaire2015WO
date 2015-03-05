@@ -132,6 +132,23 @@ main {
 	
 }
 
+/* EVENEMENTS */
+
+.eventCard {
+
+width: 40%;
+display: inline-table;
+margin: 3%;
+padding: 10px;
+border-radius: 10px;
+background-color: white;
+-moz-box-shadow: 10px 10px 60px 2px #656565;
+-webkit-box-shadow: 10px 10px 60px 2px #656565;
+-o-box-shadow: 10px 10px 60px 2px #656565;
+box-shadow: 10px 10px 60px 2px #656565;
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=60);
+}
+
 /* PRESENTATION */
 
 #presentationContainer, #atelierContainer, #infoContainer, #inscriptionContainer, #eventContainer{
