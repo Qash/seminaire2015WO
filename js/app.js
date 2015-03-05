@@ -18,7 +18,7 @@
 			
 		};
 			$http.get('../php/event_call.php').success(function(data) {
-        		$scope.events = data;
+        		$scope.events = 'data';
     		});
 	}]);
 	// End
