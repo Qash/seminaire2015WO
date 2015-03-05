@@ -18,7 +18,6 @@ $_SESSION['id_user'] = 11302484;
 		<title>Service Culturel Paris 13</title>
 	</head>
 	<body>
-		<div id="container">
 			<header>
 				<section id="logo">
 					<img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" />
@@ -219,6 +218,6 @@ $_SESSION['id_user'] = 11302484;
 			<footer>
 				<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 			</footer>
-		</div>
+	
 	</body>
 </html>
