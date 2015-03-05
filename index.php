@@ -79,7 +79,7 @@ $_SESSION['id_user'] = 11302484;
 					<section id="eventContainer" >
 						<div ng-show="campusFilterCtrl.chkFilter('vil')">
 							<h1>Villetaneuse</h1>
-							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
+							<div class="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
 							<img src="{{event.preview}}" alt="img of {{event.name}}">
 							<h2>{{event.name}}</h2>
 							<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
@@ -97,7 +97,7 @@ $_SESSION['id_user'] = 11302484;
 						
 						<div ng-show="campusFilterCtrl.chkFilter('bob')">
 							<h1>Bobigny</h1>
-							<div id="event{{$index + 1}}" class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
+							<div class="event{{$index + 1}}" class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
 								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
@@ -114,7 +114,7 @@ $_SESSION['id_user'] = 11302484;
 						</div>
 						<div ng-show="campusFilterCtrl.chkFilter('hlm')">
 							<h1>Hors les murs</h1>
-							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
+							<div class="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
 								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
