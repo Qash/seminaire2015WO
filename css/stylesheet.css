@@ -117,22 +117,23 @@ border-radius: 10px;
 
 #infoForm {
 	width:600px; 
-	margin:auto;
+	margin-left:auto;
+	margin-right:auto;
 	height:auto;
 }
 
 .box {
 	display : inline-block;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 
 }
 
 #infoForm label {
+	display: block;
 	float : left;
-	clear : left;
-	margin : 10px 20px 0 0;
-	width : 150px;
+	width : 175px;
+	margin-top: 20px;
 	font-size : 1.3em;
 	text-align : left;
 }
@@ -150,12 +151,13 @@ border-radius: 10px;
 
 
 #infoForm input[type=submit] {
-	float : right;
+	display: block;
 	cursor : pointer;
 	width : 160px;
 	height : 42px;
 	padding : 5px 10px;
-	margin : 0 40px 20px 0;
+	margin: 0 auto;
+	margin-top: 70px; 
 	border : 1px solid #b6b7b9;
 	background-color : #2A909C;
 	font-weight : bold;
