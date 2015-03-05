@@ -67,9 +67,19 @@
 
 					<!-- EVENEMENTS -->
 					<section id="eventContainer" >
-						<div ng-show="campusFilterCtrl.chkFilter('vil')" ng-repeat="event in events | where:{campus:'vil'}" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
-						<div ng-show="campusFilterCtrl.chkFilter('bob')" ng-repeat="event in events | where:{campus:'bob'}">{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
-						<div ng-show="campusFilterCtrl.chkFilter('hlm')" ng-repeat="event in events | where:{campus:'hlm'}">{{event.name}}</div> <!-- EVENEMENTS HLM -->
+						<div ng-show="campusFilterCtrl.chkFilter('vil')">
+							<h1>Villetaneuse</h1>
+							<div class"eventCard"  ng-repeat="event in events | where:{campus:'vil'}" >{{event.name}}</div> <!-- EVENEMENTS VILLETANEUSE -->
+						</div>
+						
+						<div ng-show="campusFilterCtrl.chkFilter('bob')">
+							<h1>Bobigny</h1>
+							<div class"eventCard"  ng-repeat="event in events | where:{campus:'bob'}" >{{event.name}}</div> <!-- EVENEMENTS BOBIGNY -->
+						</div>
+						<div ng-show="campusFilterCtrl.chkFilter('hlm')">
+							<h1>Hors les murs</h1>
+							<div class"eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" >{{event.name}}</div> <!-- EVENEMENTS HLM -->
+						</div>
 						<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
 						
 					</section>
