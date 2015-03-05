@@ -25,6 +25,10 @@ include_once("connexion.inc");
 		 $row_array['duration'] = $row['duration'];
 		 $row_array['location'] = $row['location'];
 		 $row_array['description'] = $row['description'];
+		 $row_array['preview'] = $row['preview'];
+		 $row_array['hour'] = $row['hour'];
+		 $row_array['campus'] = $row['campus'];
+		 
 		 $json_response[] = $row_array; 
 	}
 	
