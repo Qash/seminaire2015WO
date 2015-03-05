@@ -130,7 +130,6 @@ $_SESSION['id_user'] = 11302484;
 									?>
 								</div> 
 							</div>
-							<button type="button" id="downloadProg"><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i> Télécharger le programme</a></button>
 						</section>
 					</section>
 					
@@ -218,7 +217,7 @@ $_SESSION['id_user'] = 11302484;
 			</main>
 			<footer>
 				<ul class="dl">
-					<li><a href="#">Téléchargement Planning</a></li>
+					<li><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i> Télécharger le programme</a></li>
 					<li><a href="#">Questionnaire satisfaction</a></li>
 					<li><a href="#">Mentions légales</a></li>
 					<li><a href="#">Conditions Générales d'Utilisation</a></li>
