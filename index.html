@@ -72,8 +72,8 @@
 						<div ng-show="campusFilterCtrl.chkFilter('vil')">
 							<h1>Villetaneuse</h1>
 							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
-								<h2>{{event.name}}</h2>
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
+								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
 							</div> 
@@ -82,8 +82,8 @@
 						<div ng-show="campusFilterCtrl.chkFilter('bob')">
 							<h1>Bobigny</h1>
 							<div id="event{{$index + 1}}" class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
-								<h2>{{event.name}}</h2>
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
+								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
 							</div> 
@@ -91,8 +91,8 @@
 						<div ng-show="campusFilterCtrl.chkFilter('hlm')">
 							<h1>Hors les murs</h1>
 							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
-								<h2>{{event.name}}</h2>
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
+								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
 							</div> 
@@ -151,6 +151,7 @@
 				<!-- ---------------- -->
 				<section class="ateliers" ng-controller="ateliersController as ateliersCtrl">
 					<section id="atelierContainer">
+						<div id="presentationAteliers" ng-show="!toggle">
 						<img id="atelierImg" src="img/ateliers.jpg" alt="ateliers" />
 						<h1>Ateliers de pratique artistique</h1>
 						<h3>Mode d'emploi</h3>
@@ -166,12 +167,18 @@
 						<h3>Adhésion</h3>
 						<p>10 € pour les étudiants et 15 € pour l'ensemble des personnels de l'Université.<br />
 						Le paiement de cette redevance permet de pratiquer une ou plusieurs activités du service culturel, de façon forfaitaire, en fonction des places disponibles au moment de votre inscription sur les activités choisies. </p>
+<<<<<<< HEAD
 					
 						<button type="button" id="seeWorkshops"><a ng-click="ateliersCtrl.toggle()" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
 						<div class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
+=======
+						</div>
+						<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
+						<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
+>>>>>>> e288ea7febe64fa623d602c7cb4e49aa832ea96a
 								<h2>{{workshop.name}}</h2>
 								<p>Description : <br />{{workshop.description}}</p>
-							</div>
+						</div>
 					</section>
 				</section>
 		</main>
