@@ -101,6 +101,13 @@ border-radius: 10px;
 	width:100%;
 }
 
+/* EVENEMENTS */
+
+.eventCard {
+	width:33%;
+	display:inline-block;
+}
+
 /* FORM : RESTER INFORME */
 
 #infoForm {
