@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
 			
 			if($mail_exists !== true){
 				foreach($_POST['category'] as $cat) {
-					$req = "INSERT INTO RelPreferencies(mail,category) VALUES('".$mail."','".$cat."')";
+					$req = "INSERT INTO RelPreferencies (mail, category) VALUES (:".$mail.", :".$cat."")";
 					try {
 						$state = $connexion->prepare($req);
 						$state->execute(array("mail" => $mail, "category" => $cat));
