@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_POST['submit'])){
 	if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['mail'])){
 		if(!empty($_POST['category'])){
