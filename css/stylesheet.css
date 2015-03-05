@@ -3,13 +3,13 @@
     src: url(font/JosefinSans-Regular.ttf);
 }
 body{
-	background-color: tomato;
+	background-color: whitesmoke;
 	width: 100%;
 	margin:0;
 	font-family : Josefin;
 }
 header{
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 a{
@@ -38,16 +38,28 @@ li {
 
 #navSite ul li a {
 	color:chartreuse;
+	font-size : 1.6em;
 }
 
 #campusFilter{
 	width: 100%;
 	text-align: center;
+	margin : 10px;
 }
 
 #campusFilter li{
-	background-color: lightsalmon;
+	background-color: purple;
 	border-radius: 5px;
+}
+
+#campusFilter li:hover{
+	background-color: darkviolet;
+	border-radius: 5px;
+}
+
+#campusFilter li a {
+	color : white;
+	font-size : 1.3em;
 }
 #campusFilter .truc{
 	background-color: yellow;
