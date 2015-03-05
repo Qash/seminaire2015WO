@@ -27,7 +27,8 @@ if(isset($_POST['submit'])){
 			}
 			
 			if($mail_exists !== true){
-				print_r($_POST['category']);
+				$cats[] = $_POST['category'];
+				print_r($cats);
 			} else {
 				echo ("t'as déjà un mail !");
 			}
