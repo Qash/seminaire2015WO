@@ -40,11 +40,11 @@ $(document).ready(function() {
 	else
 		var curPage = window.location.hash;
 	changePage(curPage);
-	
+	moment.locale('fr');
 	
 	/* CARROUSEL */
 	$("#owl-demo").owlCarousel({
-	 
+	 	
 		autoPlay : 6000,
 		slideSpeed : 300,
 		paginationSpeed : 400,
