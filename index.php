@@ -26,10 +26,10 @@ $_SESSION['id_user'] = 11302484;
 			<!-- MENU PRINCIPAL -->
 			<nav id="navSite">
 				<ul>
-					<li><a href="#accueil" onclick="changePage(this.hash);"><i class="fa fa-home"></i> Accueil</a></li>
-					<li><a href="#inscription" onclick="changePage(this.hash);"><i class="fa fa-paint-brush"></i> Inscription</a></li>
-					<li><a href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> Rester Informé</a></li>
-					<li><a href="#ateliers" onclick="changePage(this.hash);"><i class="fa fa-briefcase"></i> Ateliers</a></li>
+					<li><a href="#accueil" onclick="changePage(this.hash);"><i class="fa fa-home"></i> ACCUEIL</a></li>
+					<li><a href="#inscription" onclick="changePage(this.hash);"><i class="fa fa-paint-brush"></i> INSCRIPTION</a></li>
+					<li><a href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> RESTER INFORME</a></li>
+					<li><a href="#ateliers" onclick="changePage(this.hash);"><i class="fa fa-briefcase"></i> ATELIERS</a></li>
 				</ul>
 			</nav>
 
