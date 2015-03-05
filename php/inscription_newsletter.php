@@ -32,8 +32,8 @@ if(isset($_POST['submit'])){
 				
 				$sql = "
 				
-				INSERT INTO car(name, type) VALUES ('car1', 'coupe'); 
-				INSERT INTO car(name, type) VALUES ('car2', 'coupe');
+				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[0]."'); 
+				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[1]."');
 				";
 				
 				try {
