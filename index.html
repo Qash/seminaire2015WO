@@ -151,6 +151,7 @@
 				<!-- ---------------- -->
 				<section class="ateliers" ng-controller="ateliersController as ateliersCtrl">
 					<section id="atelierContainer">
+						<div id="presentationAteliers" ng-show="!toggle">
 						<img id="atelierImg" src="img/ateliers.jpg" alt="ateliers" />
 						<h1>Ateliers de pratique artistique</h1>
 						<h3>Mode d'emploi</h3>
@@ -166,12 +167,12 @@
 						<h3>Adhésion</h3>
 						<p>10 € pour les étudiants et 15 € pour l'ensemble des personnels de l'Université.<br />
 						Le paiement de cette redevance permet de pratiquer une ou plusieurs activités du service culturel, de façon forfaitaire, en fonction des places disponibles au moment de votre inscription sur les activités choisies. </p>
-					
+						</div>
 						<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
 						<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
 								<h2>{{workshop.name}}</h2>
 								<p>Description : <br />{{workshop.description}}</p>
-							</div>
+						</div>
 					</section>
 				</section>
 		</main>
