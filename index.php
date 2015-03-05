@@ -213,6 +213,7 @@ $_SESSION['id_user'] = 11302484;
 				</section>
 		</main>
 		<footer>
+			<h1> I'M A FKIN AWESOME FOOTER </h1>
 		</footer>
 	</body>
 </html>
