@@ -29,8 +29,13 @@ if(isset($_POST['submit'])){
 			if($mail_exists !== true){
 				foreach($_POST['category'] as $cat) {
 					$req = "INSERT INTO RelPreferencies(mail,category) VALUES('".$mail."','".$cat."')";
-					$connexion->exec($req);
-					echo("proute");
+					try {
+						$state = $connexion->prepare($req);
+						$state->execute(array("mail" => $mail, "category" => $cat));
+					}
+					catch (Exception $e) {
+						echo $e->getMessage();
+					}
 				}
 			} else {
 				echo ("t'as déjà un mail !");
