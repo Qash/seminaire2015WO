@@ -304,11 +304,11 @@ footer {
 	position: relative;
 	background-color: #363636;
 	height: 10%;
-	-moz-box-shadow: inset 0px -10px 0px 0px #343434;
-	-webkit-box-shadow: inset 0px -10px 0px 0px #343434;
-	-o-box-shadow: inset 0px -10px 0px 0px #343434;
-	box-shadow: inset 0px -10px 0px 0px #343434;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#343434, Direction=90, Strength=0);
+	-moz-box-shadow: inset 0px -10px 5px 0px #000000;
+	-webkit-box-shadow: inset 0px -10px 5px 0px #000000;
+	-o-box-shadow: inset 0px -10px 5px 0px #000000;
+	box-shadow: inset 0px -10px 5px 0px #000000;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=90, Strength=5);
 }
 
 footer img {
