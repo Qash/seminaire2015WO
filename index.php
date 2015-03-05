@@ -206,7 +206,10 @@ $_SESSION['id_user'] = 11302484;
 						<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"> Retour <i class="fa fa-arrow-circle-left"></i></a></button>
 						<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
 								<h2>{{workshop.name}}</h2>
-								<p>Description : <br />{{workshop.description}}</p>
+								<p>{{workshop.description}}</p>
+								<p><strong>Où :</strong> <br />{{workshop.location}}</p>
+								<p><strong>Quand :</strong> <br />{{workshop.day}}</p>
+								<p><strong>Qui :</strong> <br />{{workshop.coordinator}}</p>
 						</div>
 					</div>
 					</section>
