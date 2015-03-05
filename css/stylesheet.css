@@ -249,3 +249,7 @@ margin:  0 auto;
 #seeWorkshops a {
 	color : chartreuse;
 }
+
+#atelierCard{
+	border:solid 1px black;
+}
