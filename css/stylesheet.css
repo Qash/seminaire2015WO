@@ -7,8 +7,6 @@ body{
 	width: 100%;
 	margin:0;
 	font-family : Josefin;
-	margin-left: 10%;
-	margin-right: 10%;
 }
 
 h1 {
@@ -17,7 +15,6 @@ h1 {
 
 header{
 	margin-bottom: 20px;
-	margin-left: -10%;
 }
 
 a{
