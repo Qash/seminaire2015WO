@@ -28,7 +28,23 @@ if(isset($_POST['submit'])){
 			
 			if($mail_exists !== true){
 				$cats[] = $_POST['category'];
-				print_r($cats);
+				$connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, 1);
+				
+				$sql = "
+				
+				INSERT INTO car(name, type) VALUES ('car1', 'coupe'); 
+				INSERT INTO car(name, type) VALUES ('car2', 'coupe');
+				";
+				
+				try {
+				    $stmt = $connexion->prepare($sql);
+				    $stmt->execute();
+				}
+				catch (PDOException $e)
+				{
+				    echo $e->getMessage();
+				    die();
+				}
 			} else {
 				echo ("t'as déjà un mail !");
 			}
