@@ -33,11 +33,11 @@ li {
 #navSite{
 	width: 100%;
 	text-align: center;
-	background-color: lightsalmon;
+	background-color: purple;
 }
 
 #navSite ul li a {
-	color:black;
+	color:chartreuse;
 }
 
 #campusFilter{
@@ -75,7 +75,7 @@ border-radius: 10px;
 
 /* PRESENTATION */
 
-#presentationContainer{
+#presentationContainer, #atelierContainer{
 	margin-left:5%;
 	margin-right:5%;
 }
