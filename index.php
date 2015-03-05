@@ -218,7 +218,7 @@ $_SESSION['id_user'] = 11302484;
 			</main>
 			<footer>
 				<ul class="dl">
-					<li><a href="#">planning</a></li>
+					<li><a href="#">Planning</a></li>
 					<li><a href="#">Questionnaire satisfaction</a></li>
 				</ul>
 				<ul class="rsn">
