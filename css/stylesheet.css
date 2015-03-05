@@ -128,6 +128,7 @@ li {
 	display:inline-block;
 	margin:8px;
 	border : 1px black solid;
+	background-color: white;
 }
 
 .eventDate {
