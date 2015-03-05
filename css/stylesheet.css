@@ -304,6 +304,11 @@ footer {
 	position: relative;
 	background-color: #363636;
 	height: 10%;
+	-moz-box-shadow: inset 0px -5px 0px 0px #656565;
+	-webkit-box-shadow: inset 0px -5px 0px 0px #656565;
+	-o-box-shadow: inset 0px -5px 0px 0px #656565;
+	box-shadow: inset 0px -5px 0px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=90, Strength=0);
 }
 
 footer img {
