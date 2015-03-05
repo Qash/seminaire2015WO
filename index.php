@@ -28,7 +28,7 @@ $_SESSION['id_user'] = 11302484;
 				<ul>
 					<li><a href="#accueil" onclick="changePage(this.hash);"><i class="fa fa-home"></i> ACCUEIL</a></li>
 					<li><a href="#inscription" onclick="changePage(this.hash);"><i class="fa fa-paint-brush"></i> INSCRIPTION</a></li>
-					<li><a href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> RESTER INFORME</a></li>
+					<li><a href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> RESTER INFORMÉ</a></li>
 					<li><a href="#ateliers" onclick="changePage(this.hash);"><i class="fa fa-briefcase"></i> ATELIERS</a></li>
 				</ul>
 			</nav>
@@ -216,7 +216,6 @@ $_SESSION['id_user'] = 11302484;
 				</section>
 		</main>
 		<footer>
-			<h1> I'M A FKIN AWESOME FOOTER </h1>
 			<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 		</footer>
 	</body>
