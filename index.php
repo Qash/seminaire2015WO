@@ -19,6 +19,10 @@ $_SESSION['id_user'] = 11302484;
 	</head>
 	<body>
 		<header>
+			<section id="logo">
+				<img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" />
+				<img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" />
+			</section>
 			<!-- MENU PRINCIPAL -->
 			<nav id="navSite">
 				<ul>
