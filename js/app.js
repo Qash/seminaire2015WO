@@ -17,7 +17,7 @@
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 			
 		};
-			$http.get('90.2.186.31/seminaire2015WO/php/event_call.php').success(function(data) {
+			$http.get('../php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
 	}]);
