@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['id_user'] = 11302484;
 ?>
 <!doctype html>
 <html lang='fr' ng-app="serviceCulturel">
