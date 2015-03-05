@@ -22,7 +22,7 @@ include_once("connexion.inc");
 	foreach($data as $row) {
 		 $row_array['name'] = $row['name'];
 		 $row_array['date_debut'] = $row['date_debut'];
-		 $row_array['duration'];
+		 $row_array['duration'] = $row['duration'];
 		 $json_response[] = $row_array; 
 	}
 	
