@@ -8,6 +8,11 @@ body{
 	margin:0;
 	font-family : Josefin;
 }
+
+h1 {
+	font-size : 2em;
+}
+
 header{
 	margin-bottom: 20px;
 }
@@ -106,7 +111,7 @@ border-radius: 10px;
 .eventCard {
 	width:25%;
 	display:inline-block;
-	margin:2px;
+	margin:8px;
 	border : 1px black solid;
 }
 
