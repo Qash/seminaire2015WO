@@ -337,7 +337,7 @@ footer {
 	-moz-box-shadow: inset 0px -5px 0px 0px #222;
 	-webkit-box-shadow: inset 0px -5px 0px 0px #222;
 	-o-box-shadow: inset 0px -5px 0px 0px #222;
-	box-shadow: inset 0px -5px 2px 0px #222;
+	box-shadow: inset 0px -5px 0px 0px #222;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
 	text-align: left;
 }
@@ -368,7 +368,7 @@ footer li a {
 
 footer img {
 	position: absolute;
-	height: 90%;
+	height: 80%;
 	margin-right: 0.5%;
 	margin-top: 0.5%;
 	right: 0;
