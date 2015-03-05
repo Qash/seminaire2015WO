@@ -24,6 +24,7 @@ include_once("connexion.inc");
 		 $row_array['date_debut'] = $row['date_debut'];
 		 $row_array['duration'] = $row['duration'];
 		 $row_array['location'] = $row['location'];
+		 $row_array['description'] = $row['description'];
 		 $json_response[] = $row_array; 
 	}
 	
