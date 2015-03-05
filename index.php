@@ -214,6 +214,7 @@ $_SESSION['id_user'] = 11302484;
 		</main>
 		<footer>
 			<h1> I'M A FKIN AWESOME FOOTER </h1>
+			<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 		</footer>
 	</body>
 </html>
