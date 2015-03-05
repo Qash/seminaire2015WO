@@ -100,3 +100,51 @@ border-radius: 10px;
 #atelierImg {
 	width:100%;
 }
+
+/* FORM : RESTER INFORME */
+
+#infoForm {
+	width:600px; 
+	margin:auto;
+	height:auto;
+}
+
+
+#infoForm label {
+	float : left;
+	clear : left;
+	margin : 10px 20px 0 0;
+	width : 150px;
+	font-size : 1.3em;
+	text-align : right;
+}
+
+#infoForm input {
+	font-size : 14px;
+	width : 270px;
+	height : 35px;
+	padding : 5px 10px 0px 10px;
+	margin : 0 0 50px 0;
+	border : 1px solid #b6b7b9;
+	border-radius : 5px;
+}
+
+#infoForm input[type=checkbox] {
+	display : inline;
+	width: 13px;
+	height: 13px;
+	padding: 0;
+	margin:0;
+}
+
+#infoForm input[type=submit] {
+	float : right;
+	cursor : pointer;
+	width : 160px;
+	height : 42px;
+	padding : 5px 10px;
+	margin : 0 40px 20px 0;
+	border : 1px solid #b6b7b9;
+	background-color : #2A909C;
+	font-weight : bold;
+}

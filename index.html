@@ -22,6 +22,7 @@
 					<li><a href="#inscription" onclick="changePage(this.hash);"><i class="fa fa-paint-brush"></i> Inscription</a></li>
 					<li><a href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> Rester Informé</a></li>
 					<li><a href="#ateliers" onclick="changePage(this.hash);"><i class="fa fa-briefcase"></i> Ateliers</a></li>
+				</ul>
 			</nav>
 
 		</header>
@@ -109,19 +110,20 @@
 				<section class="information">
 					<section id="infoContainer">
 						<h1>Rester informé !</h1>
-						<form  action="php/inscription_newsletter.php" method="POST">
-							<input type="text" name="firstname" placeholder="Prénom"> Prénom </br>
-							<input type="text" name="lastname" placeholder="Nom"> Nom </br>
-							<input type="mail" name="mail" placeholder="adresse@mail.com"> mail </br>
-							<input type="checkbox" name="category[]" value="Théâtre"> Théâtre </br>
-							<input type="checkbox" name="category[]" value="Danse"> Danse </br>
-							<input type="checkbox" name="category[]" value="Exposition"> Exposition </br>
-							<input type="checkbox" name="category[]" value="Musique"> Musique </br>
-							<input type="checkbox" name="category[]" value="Clown"> Clown </br>
-							<input type="checkbox" name="category[]" value="Battle"> Battle </br>
-							<input type="checkbox" name="category[]" value="Block Party"> Block Party </br>
-							<input type="checkbox" name="category[]" value="Concert"> Concert </br>
-							<input type="submit" name="submit" value="submit">
+						<p>Pour recevoir la newsletter concernant vos événements préférés, abonnez-vous !</p>
+						<form id="infoForm" action="php/inscription_newsletter.php" method="POST">
+							<label for="prenom">Prénom</label> <input type="text" name="firstname" placeholder="Prénom"> </br>
+							<label for="nom">Nom</label> <input type="text" name="lastname" placeholder="Nom"> </br>
+							<label for="mail">E-Mail</label> <input type="mail" name="mail" placeholder="adresse@mail.com"> </br>
+							<label><input type="checkbox" name="category[]" value="Théâtre"> Théâtre </label></br>
+							<label><input type="checkbox" name="category[]" value="Danse"> Danse </label></br>
+							<label><input type="checkbox" name="category[]" value="Exposition"> Exposition </label></br>
+							<label><input type="checkbox" name="category[]" value="Musique"> Musique </label></br>
+							<label><input type="checkbox" name="category[]" value="Clown"> Clown </label></br>
+							<label><input type="checkbox" name="category[]" value="Battle"> Battle </label></br>
+							<label><input type="checkbox" name="category[]" value="Block Party"> Block Party </label></br>
+							<label><input type="checkbox" name="category[]" value="Concert"> Concert </label></br>
+							<input type="submit" name="submit" value="Valider">
 						</form>
 					</section>
 				</section>
