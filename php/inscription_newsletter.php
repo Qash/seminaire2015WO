@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
 			$lastname = $_POST['lastname'];
 			$mail = $_POST['mail'];
 			
-			$requete = "SELECT mail FROM `newsletter`";
+			$requete = "SELECT `mail` FROM `newsletter`";
 			try {
 				$response = $connexion->prepare($requete);
 				$response->execute();
@@ -16,8 +16,13 @@ if(isset($_POST['submit'])){
 			}
 			
 			$data = $response->fetchAll();
-			$row_array = array();
-
+						
+			foreach($data as $row) {
+				$row_array['mail'] = $row['mail'];
+				if ($row_array['mail'] == $mail) {
+					$mail_exists = true;
+				}
+			}
 			
 			if($mail_exists !== true){
 				foreach($_POST['category'] as $cat) {
