@@ -30,6 +30,7 @@ if(isset($_POST['submit'])){
 				foreach($_POST['category'] as $cat) {
 					$connexion=$db->prepare('INSERT INTO RelPreferencies(mail, category) VALUES(\''.$mail.'\', \''.$cat.'\', \')');
 					$connexion->execute(array (':mail' => $mail, ':category' => $cat));
+					echo ($cat." and ".$mail);
 
 				}
 			} else {
