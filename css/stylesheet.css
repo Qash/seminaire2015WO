@@ -121,6 +121,12 @@ border-radius: 10px;
 	height:auto;
 }
 
+.box {
+	display : inline-block;
+	margin: 0;
+	padding: 0;
+
+}
 
 #infoForm label {
 	float : left;
@@ -128,7 +134,7 @@ border-radius: 10px;
 	margin : 10px 20px 0 0;
 	width : 150px;
 	font-size : 1.3em;
-	text-align : right;
+	text-align : left;
 }
 
 #infoForm input[type="text"], #infoForm input[type="mail"]{
@@ -141,27 +147,7 @@ border-radius: 10px;
 	border-radius : 5px;
 }
 
-#infoForm ul {
-	margin: 0;
-	padding: 0;
-}
 
-.box label {
-	margin: 0;
-	padding: 0;
-}
-
-.box input {
-	margin: 0;
-	padding: 0;
-}
-
-.box {
-	display : inline-block;
-	margin: 0;
-	padding: 0;
-
-}
 
 #infoForm input[type=submit] {
 	float : right;
