@@ -52,6 +52,10 @@ $(document).ready(function() {
 	 
 	  });
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 function changePage(arg){
 		$(".accueil").fadeTo(500,0,"swing");
 		$('.accueil').css('display', 'none');
@@ -64,4 +68,7 @@ function changePage(arg){
 		$("."+arg.substring(1)).css('display', 'block');
 		$("."+arg.substring(1)).fadeTo(500,1,"swing");
 	}	
+<<<<<<< HEAD
 	
+=======
+>>>>>>> origin/master
