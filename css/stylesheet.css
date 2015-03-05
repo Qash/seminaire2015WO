@@ -297,7 +297,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, S
 .atelierCard h2 {
 text-align: center;
 }
-/* FOOTER */
+
 /* FOOTER */
 
 footer {
@@ -311,10 +311,18 @@ footer {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
 }
 
+footer li {
+	display: block;
+}
+footer li a {
+	color: chartreuse;
+}
 footer img {
 	position: absolute;
 	height: 90%;
 	margin-right: 0.5%;
 	margin-top: 0.5%;
 	right: 0;
+	top : 0;
 }
+
