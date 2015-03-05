@@ -328,20 +328,23 @@ text-align: center;
 }
 
 /* FOOTER */
-
 footer {
 	position: relative;
 	background-color: #363636;
-	height: 10%;
+	height: 150px;
 	-moz-box-shadow: inset 0px -3px 2px 0px #222;
 	-webkit-box-shadow: inset 0px -3px 2px 0px #222;
 	-o-box-shadow: inset 0px -3px 2px 0px #222;
 	box-shadow: inset 0px -3px 2px 0px #222;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
+	text-align: center;
 }
 
 footer ul {
+	position: relative;
 	display: inline-table;
+	line-height: 20px;
+	margin-top: 2%;
 }
 
 footer li {
@@ -358,4 +361,5 @@ footer img {
 	right: 0;
 	top : 0;
 }
+
 
