@@ -328,7 +328,6 @@ text-align: center;
 }
 
 /* FOOTER */
-/* FOOTER */
 footer {
 	position: relative;
 	background-color: #363636;
@@ -345,12 +344,12 @@ footer ul {
 	position: relative;
 	display: inline-table;
 	height: 50px;
-	margin-left: 5% ;
 }
 
 .rsn {
 	font-size: 2em;
 	line-height: 50px;
+	margin-left: 15%
 }
 
 .dl {
@@ -373,4 +372,6 @@ footer img {
 	right: 0;
 	top : 0;
 }
+
+
 
