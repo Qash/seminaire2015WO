@@ -70,6 +70,10 @@ li {
 	font-size : 1.2em;
 }
 
+main {
+	padding : 0px 30px 0px 30px;
+}
+
 #campusFilter{
 	width: 100%;
 	text-align: center;
