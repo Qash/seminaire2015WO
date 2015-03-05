@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 				}
 			}
 			
-			if(!$mail_exists){
+			if(!($mail_exists)){
 				foreach($_POST['category'] as $cat) {
 					echo $cat;
 				}
