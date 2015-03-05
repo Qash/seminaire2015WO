@@ -28,21 +28,23 @@ if(isset($_POST['submit'])){
 			
 			if($mail_exists !== true){
 				$cats[] = $_POST['category'];
-				$connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, 0);
-
-					$sql = " 
-					INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[0]."'); 
-					INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[1]."');
-					";
-					
-					try {
-					    $connexion->exec($sql);
-					}
-					catch (PDOException $e)
-					{
-					    echo $e->getMessage();
-					    die();
-					}
+				$connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, 1);
+				
+				$sql = "
+				
+				INSERT INTO car(name, type) VALUES ('car1', 'coupe'); 
+				INSERT INTO car(name, type) VALUES ('car2', 'coupe');
+				";
+				
+				try {
+				    $stmt = $connexion->prepare($sql);
+				    $stmt->execute();
+				}
+				catch (PDOException $e)
+				{
+				    echo $e->getMessage();
+				    die();
+				}
 			} else {
 				echo ("t'as déjà un mail !");
 			}
