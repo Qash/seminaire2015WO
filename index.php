@@ -165,14 +165,14 @@ $_SESSION['id_user'] = 11302484;
 									<li><label for="prenom">Prénom</label> <input type="text" name="firstname" placeholder="Prénom"> </br></li>
 									<li><label for="nom">Nom</label> <input type="text" name="lastname" placeholder="Nom"> </br></li>
 									<li><label for="mail">E-Mail</label> <input type="mail" name="mail" placeholder="adresse@mail.com"> </br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Théâtre"> Théâtre </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Danse"> Danse </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Exposition"> Exposition </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Musique"> Musique </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Clown"> Clown </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Battle"> Battle </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Block Party"> Block Party </label></br></li>
-									<li class="box"><label><input type="checkbox" name="category[]" value="Concert"> Concert </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Théâtre"><i class="fa fa-comment-o"></i> Théâtre </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Danse"><i class="fa fa-child"></i> Danse </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Exposition"><i class="fa fa-eye"></i> Exposition </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Musique"><i class="fa fa-music"></i> Musique </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Clown"><i class="fa fa-child"></i> Clown </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Battle"><i class="fa fa-users"></i> Battle </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Block Party"><i class="fa fa-users"></i> Block Party </label></br></li>
+									<li class="box"><label><input type="checkbox" name="category[]" value="Concert"><i class="fa fa-music"></i> Concert </label></br></li>
 									<input type="submit" name="submit" value="Valider">
 								</ul>
 							</form>
