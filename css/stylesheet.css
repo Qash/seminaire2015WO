@@ -328,6 +328,7 @@ text-align: center;
 }
 
 /* FOOTER */
+/* FOOTER */
 footer {
 	position: relative;
 	background-color: #363636;
@@ -337,14 +338,24 @@ footer {
 	-o-box-shadow: inset 0px -3px 2px 0px #222;
 	box-shadow: inset 0px -3px 2px 0px #222;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
-	text-align: center;
+	text-align: left;
 }
 
 footer ul {
 	position: relative;
 	display: inline-table;
+	height: 50px;
+	margin-left: 5% ;
+}
+
+.rsn {
+	font-size: 2em;
+	line-height: 50px;
+}
+
+.dl {
+	font-size: 1.5em;
 	line-height: 20px;
-	margin-top: 2%;
 }
 
 footer li {
@@ -353,6 +364,7 @@ footer li {
 footer li a {
 	color: chartreuse;
 }
+
 footer img {
 	position: absolute;
 	height: 90%;
@@ -361,5 +373,4 @@ footer img {
 	right: 0;
 	top : 0;
 }
-
 
