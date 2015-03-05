@@ -340,6 +340,10 @@ footer {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
 }
 
+footer ul {
+	display: inline-table;
+}
+
 footer li {
 	display: block;
 }
