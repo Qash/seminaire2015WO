@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 			if($mail_exists !== true){
 				$cats[] = $_POST['category'];
 					$query=$connexion->prepare('INSERT INTO RelPreferencies(mail, category) VALUES(:mail, :category)');
-					$query->execute(array (':nom' => $mail, ':prenom' => $cats[0]));
+					$query->execute(array (':mail' => $mail, ':category' => $cats[0]));
 					echo ("proute");
 			} else {
 				echo ("t'as déjà un mail !");
