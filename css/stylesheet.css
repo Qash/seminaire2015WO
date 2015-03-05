@@ -2,10 +2,12 @@
     font-family: Josefin;
     src: url(font/JosefinSans-Regular.ttf);
 }
-body{
+html, body{
 	background-color: whitesmoke;
 	width: 100%;
 	margin:0;
+	padding: 0;
+	height: 100%;
 	font-family : Josefin;
 }
 
