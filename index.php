@@ -83,7 +83,7 @@ $_SESSION['id_user'] = 11302484;
 							<?php if(isset($_SESSION['id_user'])) {
 							?>
 							<form action="php/event_inscription.php" method="POST">
-								<input type="submit" name="submti" value="inscription">
+								<input type="submit" name="submit" value="inscription">
 							</form>
 							<?php
 								}
@@ -100,7 +100,7 @@ $_SESSION['id_user'] = 11302484;
 								<?php if(isset($_SESSION['id_user'])) {
 								?>
 								<form action="php/event_inscription.php" method="POST">
-									<input type="submit" name="submti" value="inscription">
+									<input type="submit" name="submit" value="inscription">
 								</form>
 								<?php
 								}
@@ -114,10 +114,10 @@ $_SESSION['id_user'] = 11302484;
 								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
-																<?php if(isset($_SESSION['id_user'])) {
+								<?php if(isset($_SESSION['id_user'])) {
 								?>
 								<form action="php/event_inscription.php" method="POST">
-									<input type="submit" name="submti" value="inscription">
+									<input type="submit" name="submit" value="inscription">
 								</form>
 								<?php
 								}
