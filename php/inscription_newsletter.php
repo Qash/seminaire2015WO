@@ -6,6 +6,8 @@ if(isset($_POST['submit'])){
 			$lastname = $_POST['lastname'];
 			$mail = $_POST['mail'];
 			
+			include_once("connexion.inc");
+						
 			$requete = "SELECT `mail` FROM `newsletter`";
 			try {
 				$response = $connexion->prepare($requete);
