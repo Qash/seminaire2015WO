@@ -105,8 +105,7 @@ li {
 /* PRESENTATION */
 
 #presentationContainer, #atelierContainer, #infoContainer, #inscriptionContainer, #eventContainer{
-	margin-left:5%;
-	margin-right:5%;
+margin:  0 auto;
 }
 
 #presentationListe li{
@@ -122,7 +121,9 @@ li {
 	display: block;
 	width: 75%;
 	height: 75%;
+	margin: 0 auto;
 }
+
 .eventCard {
 	width:25%;
 	display:inline-block;
