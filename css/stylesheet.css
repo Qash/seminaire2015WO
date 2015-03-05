@@ -120,9 +120,28 @@ margin:  0 auto;
 #event1 {
 	display: block;
 	width: 75%;
-	height: 75%;
+	height: 400px;
 	margin: 0 auto;
 }
+
+#event1 h2 {
+	width: 300px;
+	margin-left: 2%;
+	text-align: center;
+}
+
+#event1 img {
+	margin-top: 2%;
+		margin-left: 2%;
+	width: 300px;
+
+}
+
+#event1 .description {
+	width: 45%;
+	margin-right: 0;
+}
+
 
 .eventCard {
 	width:25%;
