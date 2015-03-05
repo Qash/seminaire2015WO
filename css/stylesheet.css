@@ -108,6 +108,10 @@ border-radius: 10px;
 	display:inline-block;
 }
 
+.eventDate {
+	font-style: italic;
+}
+
 /* FORM : RESTER INFORME */
 
 #infoForm {

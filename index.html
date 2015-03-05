@@ -73,7 +73,8 @@
 							<h1>Villetaneuse</h1>
 							<div class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
 								<h2>{{event.name}}</h2>
-								<p>Description : {{event.description}}</p>
+								<p class="eventDate">{{event.date}}</p>
+								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
 						
@@ -81,14 +82,16 @@
 							<h1>Bobigny</h1>
 							<div class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
 								<h2>{{event.name}}</h2>
-								<p>Description : {{event.description}}</p>
+								<p class="eventDate">{{event.date}}</p>
+								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
 						<div ng-show="campusFilterCtrl.chkFilter('hlm')">
 							<h1>Hors les murs</h1>
 							<div class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
 								<h2>{{event.name}}</h2>
-								<p>Description : {{event.description}}</p>
+								<p class="eventDate">{{event.date}}</p>
+								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
 						
