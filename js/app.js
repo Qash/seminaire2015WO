@@ -17,7 +17,7 @@
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 			
 		};
-			$http.get('../php/event_call.php').success(function(data) {
+			$http.get('./php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
 	}]);
