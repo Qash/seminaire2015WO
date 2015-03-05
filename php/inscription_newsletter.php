@@ -28,24 +28,9 @@ if(isset($_POST['submit'])){
 			
 			if($mail_exists !== true){
 				$cats[] = $_POST['category'];
-				$connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, 1);
-				
-				$sql = "
-				
-				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[0]."'); 
-				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[1]."');
-				";
-				echo ("c'est un échec");
-				
-				try {
-				    $stmt = $connexion->prepare($sql);
-				    $stmt->execute();
-				}
-				catch (PDOException $e)
-				{
-				    echo $e->getMessage();
-				    die();
-				}
+					$query=$db->prepare('INSERT INTO RelPreferencies(mail, category) VALUES(:mail, :category)');
+					$query->execute(array (':nom' => $mail, ':prenom' => $cats[0]));
+					echo ("proute");
 			} else {
 				echo ("t'as déjà un mail !");
 			}
