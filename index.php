@@ -76,10 +76,17 @@ $_SESSION['id_user'] = 11302484;
 						<div ng-show="campusFilterCtrl.chkFilter('vil')">
 							<h1>Villetaneuse</h1>
 							<div id="event{{$index + 1}}" class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
-								<img src="{{event.preview}}" alt="img of {{event.name}}">
-								<h2>{{event.name}}</h2>
-								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
-								<p class="description">Description : <br />{{event.description}}</p>
+							<img src="{{event.preview}}" alt="img of {{event.name}}">
+							<h2>{{event.name}}</h2>
+							<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
+							<p class="description">Description : <br />{{event.description}}</p>
+							<?php if(isset($_SESSION['id_user'])) {
+							?>
+							<form action="php/event_inscription.php" method="POST">
+								<input type="submit" name="submti" value="inscription">
+							</form>
+							<?php
+								}
 							</div> 
 						</div>
 						
@@ -107,6 +114,13 @@ $_SESSION['id_user'] = 11302484;
 								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
+																<?php if(isset($_SESSION['id_user'])) {
+								?>
+								<form action="php/event_inscription.php" method="POST">
+									<input type="submit" name="submti" value="inscription">
+								</form>
+								<?php
+								}
 							</div> 
 						</div>
 						<button type="button" id="downloadProg"><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i> Télécharger le programme</a></button>
