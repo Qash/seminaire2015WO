@@ -91,10 +91,11 @@ $_SESSION['id_user'] = 11302484;
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
 								<p class="description">Description : <br />{{event.description}}</p>
 								<?php if(isset($_SESSION['id_user'])) {
-									echo('<form action = "php/event_inscription.php" method="POST">
-										<input type="submit" name="inscription" value="inscription">
-									</form>
-									');	
+								?>
+								<form action="php/event_inscription.php" method="POST">
+									<input type="submit" name="submti" value="inscription">
+								</form>
+								<?php
 								}
 								?>
 							</div> 
