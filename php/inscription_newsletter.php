@@ -35,6 +35,7 @@ if(isset($_POST['submit'])){
 				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[0]."'); 
 				INSERT INTO RelPreferencies(mail, category) VALUES ('".$mail."', '".$cats[1]."');
 				";
+				echo ("c'est un échec");
 				
 				try {
 				    $stmt = $connexion->prepare($sql);
