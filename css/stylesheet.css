@@ -7,6 +7,8 @@ body{
 	width: 100%;
 	margin:0;
 	font-family : Josefin;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 h1 {
@@ -79,13 +81,6 @@ li {
 #owl-demo{
 	width: 70%;
 	margin: auto;
-
-
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=20);
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
-
 }
 
 /* PRESENTATION */
