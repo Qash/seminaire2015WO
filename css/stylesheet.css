@@ -85,12 +85,12 @@ main {
 }
 
 #campusFilter li{
-	background-color: purple;
+	background-color: ##945AAF;
 	border-radius: 5px;
 }
 
 #campusFilter li:hover{
-	background-color: indigo;
+	background-color: #7F3F98;
 	border-radius: 5px;
 }
 
