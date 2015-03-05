@@ -36,15 +36,18 @@ li {
 }
 
 #logo {
-	height : 100px;
+	height : 120px;
 }
 
 #logoLeft {
 	float : left;
+	margin : 5px 0px 5px 10px;
+	width : 8%;
 }
 
 #logoRight {
 	float : right;
+	margin : 5px 10px 5px 0px;
 	width : 20%;
 }
 
