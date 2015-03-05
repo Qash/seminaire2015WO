@@ -43,9 +43,9 @@
 
 					<!-- CAROUSEL -->
 					<section id="owl-demo" class="owl-carousel owl-theme">
-						<div class="item"><img src="img/slide1.jpg" alt="The Last of us"></div>
-						<div class="item"><img src="img/slide2.jpg" alt="GTA V"></div>
-						<div class="item"><img src="img/slide3.jpg" alt="Mirror Edge"></div>
+						<div class="item"><img src="img/slide1.jpg" alt="slide 1"></div>
+						<div class="item"><img src="img/slide2.jpg" alt="slide 2"></div>
+						<div class="item"><img src="img/slide3.jpg" alt="slide 3"></div>
 					</section>
 					
 					<!-- PRESENTATION SERVICE CULTUREL -->
@@ -136,7 +136,7 @@
 				<!-- ---------------- -->
 				<!-- PAGE ATELIERS -->
 				<!-- ---------------- -->
-				<section class="ateliers">
+				<section class="ateliers" ng-controller="ateliersController as ateliersCtrl">
 					<section id="atelierContainer">
 						<img id="atelierImg" src="img/ateliers.jpg" alt="ateliers" />
 						<h1>Ateliers de pratique artistique</h1>
@@ -154,7 +154,11 @@
 						<p>10 € pour les étudiants et 15 € pour l'ensemble des personnels de l'Université.<br />
 						Le paiement de cette redevance permet de pratiquer une ou plusieurs activités du service culturel, de façon forfaitaire, en fonction des places disponibles au moment de votre inscription sur les activités choisies. </p>
 					
-						<button type="button" id="seeWorkshops"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</button>
+						<button type="button" id="seeWorkshops"><a ng-click="ateliersCtrl.toggle()" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
+						<div class="atelierCard"  ng-repeat="workshop in workshop" > <!-- ATELIERS -->
+								<h2>{{workshop.name}}</h2>
+								<p>Description : <br />{{workshop.description}}</p>
+							</div>
 					</section>
 				</section>
 		</main>

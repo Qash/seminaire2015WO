@@ -21,6 +21,21 @@
         		$scope.events = data;
     		});
 	}]);
+	
+	app.controller('ateliersController',['$scope','$http', function($scope,$http){
+		this.workshops =[];
+	
+		this.toggle = function(filterToSet){
+			if(!this.chkFilter(filterToSet))
+				this.activeFilter.push(filterToSet);
+			else
+				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
+			
+		};
+			$http.get('./php/workshops_call.php').success(function(data) {
+        		$scope.workshops = data;
+    		});
+	}]);
 	// End
 })();
 
