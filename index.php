@@ -217,6 +217,10 @@ $_SESSION['id_user'] = 11302484;
 					</section>
 			</main>
 			<footer>
+				<ul>
+					<li><a href="#">planning</a></li>
+					<li><a href="#">Questionnaire satisfaction</a></li>
+				</ul>
 				<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 			</footer>
 	
