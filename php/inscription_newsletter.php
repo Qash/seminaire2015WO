@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-	if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['mail'])){
+	if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['mail'])){
 		if(!empty($_POST['category'])){
 			foreach($_POST['category'] as $cat) {
 				echo $cat;
