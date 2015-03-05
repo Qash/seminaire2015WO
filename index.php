@@ -222,8 +222,8 @@ $_SESSION['id_user'] = 11302484;
 					<li><a href="#">Questionnaire satisfaction</a></li>
 				</ul>
 				<ul class="rsn">
-					<li><a href="#"><i class="fa fa-facebook-square"></i>Sc_Paris13</a></li>
-					<li><a href="#"><i class="fa fa-twitter-square"></i>Sc_Paris13</a></li>
+					<li><a href="#"><i class="fa fa-facebook-square"></i> Sc_Paris13</a></li>
+					<li><a href="#"><i class="fa fa-twitter-square"></i> Sc_Paris13</a></li>
 				</ul>
 				<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 			</footer>
