@@ -21,6 +21,6 @@ foreach($data as $row) {
 	$mail_array[] = $row_array;
 }
 
-print_r ($mail_array);
+echo json_encode($mail_array);
 
 ?>
