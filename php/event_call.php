@@ -3,7 +3,7 @@
 include_once("connexion.inc");
 	
 	
-	$requete = "SELECT * FROM `events`";
+	$requete = "SELECT * FROM `events` ORDER BY date_debut";
 	
 	try {
 	$response = $connexion->prepare($requete);
