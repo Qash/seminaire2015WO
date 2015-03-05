@@ -106,6 +106,7 @@ border-radius: 10px;
 .eventCard {
 	width:33%;
 	display:inline-block;
+	margin:2px;
 }
 
 .eventDate {
