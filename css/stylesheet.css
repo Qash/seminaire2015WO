@@ -227,7 +227,7 @@ font-size: 1.3em;
 #infoForm label {
 	display: block;
 	float : left;
-	width : 175px;
+	width : 190px;
 	margin-top: 20px;
 	font-size : 1.3em;
 	text-align : left;
@@ -258,6 +258,35 @@ font-size: 1.3em;
 	background-color : #363636;
 	color : chartreuse;
 	font: bold 1.4em Josefin;
+}
+
+#infoForm .fa {
+	color : white;
+}
+
+#infoForm .fa-comment-o {
+	border-radius : 100%;
+	background-color:#67bf70;
+}
+
+#infoForm .fa-child {
+	border-radius : 100%;
+	background-color:#374a5c;
+}
+
+#infoForm .fa-eye {
+	border-radius : 100%;
+	background-color:#4b99d3;
+}
+
+#infoForm .fa-music {
+	border-radius : 100%;
+	background-color:#ecc130;
+}
+
+#infoForm .fa-users {
+	border-radius : 100%;
+	background-color:#9168ac;
 }
 
 /* ATELIERS */
