@@ -10,6 +10,10 @@ html, body{
 	margin-right: 10%;
 	margin-left: 10%;
 	background-color: #F7F7F7;
+	-moz-box-shadow: 10px 10px 60px 2px #656565;
+	-webkit-box-shadow: 10px 10px 60px 2px #656565;
+	-o-box-shadow: 10px 10px 60px 2px #656565;
+	box-shadow: 10px 10px 60px 2px #656565;
 }
 
 h1 {
