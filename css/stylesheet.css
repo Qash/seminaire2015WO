@@ -3,7 +3,6 @@
     src: url(font/JosefinSans-Regular.ttf);
 }
 html, body{
-	background-color: whitesmoke;
 	margin:0;
 	padding: 0;
 	height: 100%;
@@ -86,7 +85,7 @@ main {
 }
 
 #campusFilter li{
-	background-color: ##945AAF;
+	background-color: #945AAF;
 	border-radius: 5px;
 }
 
