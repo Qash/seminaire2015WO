@@ -297,4 +297,18 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, S
 text-align: center;
 }
 /* FOOTER */
+/* FOOTER */
 
+footer {
+	position: relative;
+	background-color: #363636;
+	height: 10%;
+}
+
+footer img {
+	position: absolute;
+	height: 90%;
+	margin-right: 0.5%;
+	margin-top: 0.5%;
+	right: 0;
+}
