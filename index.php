@@ -224,7 +224,6 @@ $_SESSION['id_user'] = 11302484;
 				<ul class="rsn">
 					<li><a href="#">Facebook</a></li>
 					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Pinterest</a></li>
 				</ul>
 				<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
 			</footer>
