@@ -17,7 +17,7 @@
 				this.activeFilter.splice(this.activeFilter.indexOf(filterToSet),1);
 			
 		};
-			$http.get('../php/event_call.php').success(function(data) {
+			$http.get('http://ashdev.fr/seminaire2015WO/php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
 	}]);
@@ -34,18 +34,6 @@ $(document).ready(function() {
 		var curPage = window.location.hash;
 	changePage(curPage);
 	
-	function changePage(arg){
-		$(".accueil").fadeTo(500,0,"swing");
-		$('.accueil').css('display', 'none');
-		$(".inscription").fadeTo(500,0,"swing");
-		$('.inscription').css('display', 'none');
-		$(".information").fadeTo(500,0,"swing");
-		$('.information').css('display', 'none');
-		$(".ateliers").fadeTo(500,0,"swing");
-		$('.ateliers').css('display', 'none');
-		$("."+arg.substring(1)).css('display', 'block');
-		$("."+arg.substring(1)).fadeTo(500,1,"swing");
-	}	
 	
 	/* CARROUSEL */
 	$("#owl-demo").owlCarousel({
@@ -64,3 +52,16 @@ $(document).ready(function() {
 	 
 	  });
 });
+function changePage(arg){
+		$(".accueil").fadeTo(500,0,"swing");
+		$('.accueil').css('display', 'none');
+		$(".inscription").fadeTo(500,0,"swing");
+		$('.inscription').css('display', 'none');
+		$(".information").fadeTo(500,0,"swing");
+		$('.information').css('display', 'none');
+		$(".ateliers").fadeTo(500,0,"swing");
+		$('.ateliers').css('display', 'none');
+		$("."+arg.substring(1)).css('display', 'block');
+		$("."+arg.substring(1)).fadeTo(500,1,"swing");
+	}	
+	
