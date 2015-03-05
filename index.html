@@ -104,6 +104,16 @@
 				<section class="inscription">
 					<section id="inscriptionContainer">
 						<h1>Inscription</h1>
+						<form id="inscriptionForm" action="php/inscription.php" method="POST">
+							<ul>
+								<li><label for="prenom">Prénom</label> <input type="text" name="firstname" placeholder="Prénom"> </br></li>
+								<li><label for="nom">Nom</label> <input type="text" name="lastname" placeholder="Nom"> </br></li>
+								<li><label for="mail">E-Mail</label> <input type="mail" name="mail" placeholder="adresse@mail.com"> </br></li>
+								<li><label for="id_user">Numéro Etudiant</label> <input type="text" name="id_user" placeholder="11223344"> </br></li>
+								<li><label for="pwd">Mot de passe</label> <input type="password" name="pwd" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"> </br></li>
+								<input type="submit" name="submit" value="Valider">
+							</ul>
+						</form>
 					</section>
 				</section>
 				
