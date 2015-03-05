@@ -29,6 +29,8 @@ if(isset($_POST['submit'])){
 				foreach($_POST['category'] as $cat) {
 					echo $cat;
 				}
+			} else {
+				echo ("t'as déjà un mail !");
 			}
 		} else {
 			echo ("Aucune case selectionné ");
