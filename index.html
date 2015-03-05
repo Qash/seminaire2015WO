@@ -48,7 +48,7 @@
 					</section>
 					
 					<!-- PRESENTATION SERVICE CULTUREL -->
-					<section id="presentationContainer" >
+					<section id="presentationContainer" ng-if="!campusFilterCtrl.activeFilter.length" >
 						<h2>Présentation du service culturel</h2>
 						<h3>Le service culturel de Paris 13 propose tout au long de l’année :</h3>
 						<ul id="presentationListe">
@@ -90,7 +90,6 @@
 								<p>Description : {{event.description}}</p>
 							</div> 
 						</div>
-						<div ng-if="!campusFilterCtrl.activeFilter.length">CHOISISSEZ UESH</div>
 						
 					</section>
 				</section>
