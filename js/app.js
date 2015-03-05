@@ -21,6 +21,12 @@
         		$scope.events = data;
     		});
 	}]);
+	app.controller('categoryController',['$scope','$http', function($scope,$http){
+		this.RelCategories =[];
+		$http.get('./php/recup_cat.php').success(function(data) {
+        	$scope.RelCategories = data;
+    	});
+	}]);
 	
 	app.controller('ateliersController',['$scope','$http', function($scope,$http){
 		this.workshops =[];
