@@ -220,6 +220,8 @@ $_SESSION['id_user'] = 11302484;
 				<ul class="dl">
 					<li><a href="#">Planning</a></li>
 					<li><a href="#">Questionnaire satisfaction</a></li>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Conditions Générales d'Utilisation</a></li>
 				</ul>
 				<ul class="rsn">
 					<li><a href="#"><i class="fa fa-facebook-square"></i> Sc_Paris13</a></li>
