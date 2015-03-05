@@ -6,6 +6,17 @@ if(isset($_POST['submit'])){
 			$lastname = $_POST['lastname'];
 			$mail = $_POST['mail'];
 			
+			$requete = "SELECT mail FROM `newsletter`";
+			try {
+				$response = $connexion->prepare($requete);
+				$response->execute();
+			}
+			catch (Exception $e) {
+				echo $e->getMessage();
+			}
+			
+			$data = $response->fetchAll();
+			$row_array = array();
 
 			
 			if($mail_exists !== true){
