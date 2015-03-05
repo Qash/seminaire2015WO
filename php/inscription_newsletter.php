@@ -28,7 +28,7 @@ if(isset($_POST['submit'])) {
       }
     }
     
-    if($mai_exists == true) {
+    if($mail_exists == true) {
       echo ("Le mail ".$mail." a déjà été utilisé");
     } else {
       foreach ($_POST['category'] as $cat) {
