@@ -145,7 +145,7 @@ margin:  0 auto;
 
 .eventCard {
 	width:25%;
-	display:inline-block;
+	display:inline-table;
 	margin:8px;
 	border : 1px black solid;
 	background-color: white;
@@ -269,6 +269,10 @@ margin:  0 auto;
 	color : chartreuse;
 }
 
-#atelierCard{
-	border:solid 1px black;
+.atelierCard {
+	border: solid 1px black;
+	width: 40%;
+	display: inline-table;
+	margin: 3%;
+	padding: 10px;
 }
