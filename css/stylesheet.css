@@ -36,19 +36,19 @@ li {
 }
 
 #logo {
-	height : 80px;
+	height : 60px;
 }
 
 #logoLeft {
 	float : left;
 	margin : 5px 0px 5px 10px;
-	width : 15%;
+	width : 150px;
 }
 
 #logoRight {
 	float : right;
 	margin : 5px 10px 5px 0px;
-	width : 10%;
+	width : 150px;
 }
 
 #navSite{
