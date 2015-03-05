@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
       echo ("Le mail ".$mail." a déjà été utilisé");
     } else {
       foreach ($_POST['category'] as $cat) {
-        echo ("La checkbox ".$cat." a été cochée");
+        echo $cat;
       }
     }
     
