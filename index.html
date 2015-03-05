@@ -73,7 +73,7 @@
 							<h1>Villetaneuse</h1>
 							<div class="eventCard"  ng-repeat="event in events | where:{campus:'vil'}" > <!-- EVENEMENTS VILLETANEUSE -->
 								<h2>{{event.name}}</h2>
-								<p class="eventDate">{{event.date}}</p>
+								<p class="eventDate">{{event.date_debut}}</p>
 								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
@@ -82,7 +82,7 @@
 							<h1>Bobigny</h1>
 							<div class="eventCard" ng-repeat="event in events | where:{campus:'bob'}" > <!-- EVENEMENTS BOBIGNY -->
 								<h2>{{event.name}}</h2>
-								<p class="eventDate">{{event.date}}</p>
+								<p class="eventDate">{{event.datedebut}}</p>
 								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
@@ -90,7 +90,7 @@
 							<h1>Hors les murs</h1>
 							<div class="eventCard"  ng-repeat="event in events | where:{campus:'hlm'}" > <!-- EVENEMENTS HLM -->
 								<h2>{{event.name}}</h2>
-								<p class="eventDate">{{event.date}}</p>
+								<p class="eventDate">{{event.date_debut}}</p>
 								<p>Description : <br />{{event.description}}</p>
 							</div> 
 						</div>
