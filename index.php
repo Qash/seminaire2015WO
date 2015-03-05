@@ -87,6 +87,7 @@ $_SESSION['id_user'] = 11302484;
 							</form>
 							<?php
 								}
+							?>
 							</div> 
 						</div>
 						
@@ -121,6 +122,7 @@ $_SESSION['id_user'] = 11302484;
 								</form>
 								<?php
 								}
+								?>
 							</div> 
 						</div>
 						<button type="button" id="downloadProg"><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i> Télécharger le programme</a></button>
