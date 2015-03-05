@@ -29,7 +29,7 @@ if(isset($_POST['submit'])){
 			if($mail_exists !== true){
 				foreach($_POST['category'] as $cat) {
 					$req = "INSERT INTO `seminaire2015WO`.`RelPreferencies` (`mail` ,`category`)VALUES ('".$mail."', '".$cat."')";
-					$connexion->exec($req);
+					echo $cat
 				}
 			} else {
 				echo ("t'as déjà un mail !");
