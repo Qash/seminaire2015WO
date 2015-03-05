@@ -19,7 +19,6 @@ if(isset($_POST['submit'])) {
     
     $data = $response->fetchAll();
     $row_array = array();
-    $mail_array = array();
     
     foreach($data as $row) {
       $row_array['mail'] = $row['mail'];
@@ -28,7 +27,7 @@ if(isset($_POST['submit'])) {
       }
     }
     
-    if($mail_exists == true) {
+    if($mail_exists === true) {
       echo ("Le mail ".$mail." a déjà été utilisé");
     } else {
       foreach ($_POST['category'] as $cat) {
