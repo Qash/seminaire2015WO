@@ -10,6 +10,7 @@ html, body{
 	font-family : Josefin;
 	margin-right: 10%;
 	margin-left: 10%;
+	background-color: #F7F7F7;
 }
 
 h1 {
@@ -348,13 +349,13 @@ footer ul {
 }
 
 .rsn {
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 50px;
 	margin-left: 15%
 }
 
 .dl {
-	font-size: 1em;
+	font-size: 0.8em;
 	line-height: 20px;
 }
 
