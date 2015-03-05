@@ -1,6 +1,6 @@
 <?php
 include_once("connexion.inc");
-$requete = "SELECT * FROM `events` ORDER BY date_debut";
+$requete = "SELECT * FROM `RelCategories` ORDER BY event";
 try {
 $response = $connexion->prepare($requete);
 $response->execute();
