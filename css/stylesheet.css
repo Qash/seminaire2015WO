@@ -61,7 +61,8 @@ li {
 
 #navSite ul li a {
 	color:chartreuse;
-	font-size : 1.6em;
+	font-size : 1.4em;
+	font-style : bold;
 }
 
 #navSite ul li {
