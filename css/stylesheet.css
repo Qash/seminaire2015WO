@@ -144,45 +144,6 @@ margin:  0 auto;
 	width:100%;
 }
 
-/* EVENEMENTS */
-#event1 {
-	display: block;
-	width: 75%;
-	height: 400px;
-	margin: 0 auto;
-}
-
-#event1 h2 {
-	width: 300px;
-	margin-left: 2%;
-	text-align: center;
-}
-
-#event1 img {
-	margin-top: 2%;
-		margin-left: 2%;
-	width: 300px;
-
-}
-
-#event1 .description {
-	width: 45%;
-	margin-right: 0;
-}
-
-
-.eventCard {
-	width:25%;
-	display:inline-table;
-	margin:8px;
-	border : 1px black solid;
-	background-color: white;
-}
-
-.eventDate {
-	font-style: italic;
-}
-
 /* FORM : INSCRIPTION */
 
 #inscriptionForm {
