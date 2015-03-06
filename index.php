@@ -247,6 +247,7 @@ $_SESSION['id_user'] = 11302484;
 						<h1>{{day.dayOfMonth}}</h1>
 						<h2>{{day.month}}</h2>
 					</div>
+					</div>
 				</main>
 				
 
