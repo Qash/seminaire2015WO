@@ -88,6 +88,7 @@ $_SESSION['id_user'] = 11302484;
 								<?php if(isset($_SESSION['id_user'])) {
 								?>
 								<form action="php/event_inscription.php" method="POST">
+									<input type="text" name="event" value="{{event.name}}">
 									<input type="submit" name="submit" value="inscription">
 								</form>
 								<?php
@@ -106,6 +107,7 @@ $_SESSION['id_user'] = 11302484;
 									<?php if(isset($_SESSION['id_user'])) {
 									?>
 									<form action="php/event_inscription.php" method="POST">
+										<input type="text" name="event" value="{{event.name}}">
 										<input type="submit" name="submit" value="inscription">
 									</form>
 									<?php
