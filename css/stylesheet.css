@@ -337,28 +337,27 @@ font-size: 1em;
 	color : white;
 }
 
-#infoForm .fa-comment-o {
+.circle {
 	border-radius : 100%;
+}
+
+#infoForm .fa-comment-o {
 	background-color:#67bf70;
 }
 
 #infoForm .fa-child {
-	border-radius : 100%;
 	background-color:#374a5c;
 }
 
 #infoForm .fa-eye {
-	border-radius : 100%;
 	background-color:#4b99d3;
 }
 
 #infoForm .fa-music {
-	border-radius : 100%;
 	background-color:#ecc130;
 }
 
 #infoForm .fa-users {
-	border-radius : 100%;
 	background-color:#9168ac;
 }
 
