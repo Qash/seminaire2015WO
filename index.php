@@ -235,4 +235,3 @@ $_SESSION['id_user'] = 11302484;
 	
 	</body>
 </html>
->>>>>>> origin/master
