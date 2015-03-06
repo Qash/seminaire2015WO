@@ -153,7 +153,7 @@ box-shadow: 10px 10px 60px 2px #000000;
 filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=60);
 }
 
-#eventContainer form input {
+#eventContainer form input[type="text"] {
 	display: none;
 }
 
