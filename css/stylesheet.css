@@ -338,27 +338,57 @@ font-size: 1em;
 }
 
 .circle {
-	border-radius : 100%;
+	display : inline-block;
 }
 
 #infoForm .fa-comment-o {
 	background-color:#67bf70;
+	border-radius:25px;
+	width : 50px;
+	height: 50px;
+	text-align : center;
+	vertical-align : middle;
+	line-height : 50px;
 }
 
 #infoForm .fa-child {
 	background-color:#374a5c;
+	border-radius:25px;
+	width : 50px;
+	height: 50px;
+	text-align : center;
+	vertical-align : middle;
+	line-height : 50px;
 }
 
 #infoForm .fa-eye {
 	background-color:#4b99d3;
+	border-radius:25px;
+	width : 50px;
+	height: 50px;
+	text-align : center;
+	vertical-align : middle;
+	line-height : 50px;
 }
 
 #infoForm .fa-music {
 	background-color:#ecc130;
+	border-radius:25px;
+	width : 50px;
+	height: 50px;
+	text-align : center;
+	vertical-align : middle;
+	line-height : 50px;
 }
 
 #infoForm .fa-users {
 	background-color:#9168ac;
+	border-radius:25px;
+	width : 50px;
+	height: 50px;
+	text-align : center;
+	vertical-align : middle;
+	line-height : 50px;
 }
 
 /* ATELIERS */
