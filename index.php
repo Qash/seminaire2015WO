@@ -27,7 +27,7 @@ $_SESSION['id_user'] = 11302484;
 		<!-- MENU PRINCIPAL -->
 		<nav id="navSite">
 			<ul>
-				<li><a id="accueil" "href="#accueil" onclick="changePage(this.hash);"><i class="fa fa-home"></i> ACCUEIL</a></li>
+				<li><a id="accueil" href="#accueil" onclick="changePage(this.hash);"><i class="fa fa-home"></i> ACCUEIL</a></li>
 				<li><a id="inscription "href="#inscription" onclick="changePage(this.hash);"><i class="fa fa-paint-brush"></i> INSCRIPTION</a></li>
 				<li><a id="information" href="#information" onclick="changePage(this.hash);"><i class="fa fa-newspaper-o"></i> RESTER INFORMÉ</a></li>
 				<li><a id="ateliers" href="#ateliers" onclick="changePage(this.hash);"><i class="fa fa-briefcase"></i> ATELIERS</a></li>
