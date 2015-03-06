@@ -48,7 +48,7 @@
 	//INITIALISATION focusDate.events
 		for (var i = 0; i < this.events.length; i++) {
 			if(this.events[i].date.isSame(this.focusDate.formatedDate)){
-				this.focusDate.this.eventsDate.push(this.events[i]);
+				this.focusDate.eventsDate.push(this.events[i]);
 			}
 		};
 	//FIN INIT focusDate.events
@@ -89,7 +89,7 @@
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.this.eventsDate.push(this.events[i]);
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -132,7 +132,7 @@
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.this.eventsDate.push(this.events[i]);
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -149,7 +149,7 @@
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.this.eventsDate.push(this.events[i]);
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
