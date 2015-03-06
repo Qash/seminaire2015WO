@@ -393,6 +393,10 @@ font-size: 1em;
 
 /* ATELIERS */
 
+#atelierContent{
+	margin : 0px 10px 0px 10px;
+}
+
 #seeWorkshops{
 	cursor : pointer;
 	height : 50px;
@@ -414,14 +418,13 @@ font-size: 1em;
 
 width: 40%;
 display: inline-table;
-margin: 3%;
+margin: 1.5%;
 padding: 10px;
-border-radius: 10px;
 background-color: white;
--moz-box-shadow: 10px 10px 60px 2px #656565;
--webkit-box-shadow: 10px 10px 60px 2px #656565;
--o-box-shadow: 10px 10px 60px 2px #656565;
-box-shadow: 10px 10px 60px 2px #656565;
+-moz-box-shadow: 1px 1px 12px #555;
+-webkit-box-shadow: 1px 1px 12px #555;
+-o-box-shadow: 1px 1px 12px #555;
+box-shadow: 1px 1px 12px #555;
 filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=60);
 }
 
