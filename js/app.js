@@ -51,7 +51,7 @@
 		};
 	//INITIALISATION focusDate.events
 	for (var i = 0; i < this.events.length; i++) {
-		if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+		if(this.events[i].date_debut.isSame(this.focusDate.date)){
 			this.focusDate.eventsDate.push(events[i]);
 		}
 	};
