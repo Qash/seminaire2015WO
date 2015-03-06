@@ -1,8 +1,8 @@
 <?php
 
-define("HOTE", "127.0.0.1");
-define("USER","seminaire");
-define("MDP","seminaire");
-define("BD","seminaire2015WO");
+define("HOTE", "lamp-pedago");
+define("USER","11302484");
+define("MDP","0111904007R");
+define("BD","11302484_seminaire");
 
 ?>

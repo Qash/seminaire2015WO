@@ -181,7 +181,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 
 .desc {
 	font-weight: bold;
-	line-height: 50px;
 }
 
 #event1 {
@@ -228,7 +227,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 
 #presentationContainer, #atelierContainer, #infoContainer, #inscriptionContainer, #eventContainer{
 margin:  0 auto;
-font-size: 1.3em;
+font-size: 1em;
 }
 
 #presentationListe li{
@@ -444,6 +443,3 @@ footer img {
 	right: 0;
 	top : 0;
 }
-
-
-
