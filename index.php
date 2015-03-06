@@ -204,10 +204,10 @@ $_SESSION['id_user'] = 11302484;
 							<h3>Adhésion</h3>
 							<p>10 € pour les étudiants et 15 € pour l'ensemble des personnels de l'Université.<br />
 								Le paiement de cette redevance permet de pratiquer une ou plusieurs activités du service culturel, de façon forfaitaire, en fonction des places disponibles au moment de votre inscription sur les activités choisies. </p>
-								<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
+								<button type="button" id="seeWorkshops" ng-click="toggle = !toggle"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</button>
 							</div>
 							<div ng-show="toggle" id="atelierContent">
-								<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"> Retour <i class="fa fa-arrow-circle-left"></i></a></button>
+								<button type="button" id="seeWorkshops" ng-click="toggle = !toggle"> Retour <i class="fa fa-arrow-circle-left"></i></button>
 								<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
 									<h2>{{workshop.name}}</h2>
 									<p>{{workshop.description}}</p>
