@@ -69,6 +69,7 @@ $(document).ready(function() {
 function changePage(arg){
 		$(".accueil").fadeTo(500,0,"swing");
 		$('.accueil').css('display', 'none');
+		$('#accueil').css('background-color', 'red');
 		$(".inscription").fadeTo(500,0,"swing");
 		$('.inscription').css('display', 'none');
 		$(".information").fadeTo(500,0,"swing");
