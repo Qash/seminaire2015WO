@@ -171,6 +171,19 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 	cursor: pointer; 
 }
 
+.eventCard h2 {
+	text-decoration: underline;
+}
+
+.eventCard .date {
+	font-style: italic;
+}
+
+.desc {
+	font-weight: bold;
+	line-height: 50px;
+}
+
 #event1 {
 	width: 90%;
 }
@@ -182,6 +195,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 	margin: 0;
 	width: 45%;
 	text-align: center;
+}
+
+#event1 h2 {
+	line-height: 75px;
 }
 
 #event1 .description {
@@ -202,13 +219,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 	margin-bottom: 10%;
 	text-align: center;
 }
-
-.desc {
-	font-weight: bold;
-	text-decoration: underline;
-	line-height: 50px;
-}
-
 
 #eventContainer form input[type="text"] {
 	display: none;
