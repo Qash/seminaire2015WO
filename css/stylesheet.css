@@ -203,6 +203,13 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 	text-align: center;
 }
 
+.desc {
+	font-weight: bold;
+	text-decoration: underline;
+	line-height: 50px;
+}
+
+
 #eventContainer form input[type="text"] {
 	display: none;
 }
