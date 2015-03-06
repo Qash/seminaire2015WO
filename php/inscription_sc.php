@@ -22,13 +22,13 @@ if(isset($_POST['submit'])) {
       $row_array = array();
       foreach($data as $row) {
         $row_array['mem_sc'] = $row['mem_sc'];
-        if($row_array['1'] == 0) {
-          $sql = "UPDATE user SET mem_sc='1' WHERE id=".$id_user."";
-          echo("Utilisateur ajouté correctement");
         } else {
           echo ("Vous êtes déjà inscrit au service culturel");
         }
-      }
+       if($row_array['mem_sc'] == 0) {
+        $sql = "UPDATE user SET mem_sc='1' WHERE id=".$id_user."";
+        echo("Utilisateur ajouté correctement");
+        }
       } else {
         echo("Mail ou numéro étudiant erroné");
       }
