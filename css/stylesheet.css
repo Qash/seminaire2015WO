@@ -393,6 +393,11 @@ font-size: 1em;
 
 /* ATELIERS */
 
+
+#aterlierContainer {
+	margin : auto;
+}
+
 #seeWorkshops{
 	cursor : pointer;
 	height : 50px;
