@@ -223,7 +223,7 @@ $_SESSION['id_user'] = 11302484;
 					<button class="calendarBtn" ng-click="campusFilterCtrl.nextDay()">Suivant</button>
 					<div id="focusCard"> 
 						{{campusFilterCtrl.focusDate.formatedDate}}
-						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in campusFilterCtrl.focusDate.eventsDate">
+						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in focusDate.eventsDate">
 							<img src="{{event.preview}}" alt="img of {{event.name}}">
 							<h2>{{event.name}}</h2>
 							<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
