@@ -38,6 +38,8 @@ if(isset($_SESSION['id_user'])) {
 		if(isset($_POST['submit']) && isset($_POST['event'])) {
 
 			$requete = "SELECT * FROM events where name = '".$_POST['event']."'";
+			$event = $_POST['event'];
+
 
 				try {
 				$response = $connexion->prepare($requete);
@@ -52,7 +54,10 @@ if(isset($_SESSION['id_user'])) {
 				foreach($data as $row) {
 					$bd_event = $row['name'];
 					if($bd_event == $row['name']) {
-						$req = "INSERT INTO  `seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
+						$req = "INSERT INTO `RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
+						$state = $connexion->prepare($req);
+						$state->execute();
+						header("Location: http://lamp-pedago/html/a2mm/mathieu.brossard/seminaire2015WO/");
 					} else {
 						echo ("L'évènement pour lequel vous essayez de vous inscrire n'existe pas.");
 					}
