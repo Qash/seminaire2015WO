@@ -347,11 +347,11 @@ footer ul {
 	position: relative;
 	display: inline-table;
 	height: 50px;
+	margin-left: 10%
 }
 
 .rsn {
 	font-size: 1.2em;
-	margin-left: 15%
 }
 
 .dl {
