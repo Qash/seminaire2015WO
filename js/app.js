@@ -64,7 +64,7 @@
 			month:moment.months()[moment(this.focusDate.date).subtract(j,"days").get('month')],
 			dayOfWeek:moment.weekdays()[moment(this.focusDate.date).subtract(j,"days").get('day')],
 			dayOfMonth:moment(this.focusDate.date).subtract(j,"days").get('date'),
-			year:moment(this.focusDate.date).subtract(j,"days").get('year'),
+			year:moment(this.focusDate.date).subtract(j,"days").get('year')
 		});
 
 	};
@@ -75,8 +75,7 @@
 			month:moment.months()[moment(this.focusDate.date).add(j,"days").get('month')],
 			dayOfWeek:moment.weekdays()[moment(this.focusDate.date).add(j,"days").get('day')],
 			dayOfMonth:moment(this.focusDate.date).add(j,"days").get('date'),
-			year:moment(this.focusDate.date).add(j,"days").get('year'),
-
+			year:moment(this.focusDate.date).add(j,"days").get('year')
 		});
 	};
 	//FIN INIT week
@@ -92,7 +91,7 @@
 			eventsDate:[]
 		};
 		for (var i = 0; i < this.events.length; i++) {
-			if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+			if(this.events[i].date_debut.isSame(this.focusDate.date)){
 				this.focusDate.eventsDate.push(this.events[i]);
 			}
 		};
@@ -135,7 +134,7 @@
 			eventsDate:[]
 		};
 		for (var i = 0; i < this.events.length; i++) {
-			if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+			if(this.events[i].date_debut.isSame(this.focusDate.date)){
 				this.focusDate.eventsDate.push(this.events[i]);
 			}
 		};
@@ -152,7 +151,7 @@
 			eventsDate:[]
 		};
 		for (var i = 0; i < this.events.length; i++) {
-			if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+			if(this.events[i].date_debut.isSame(this.focusDate.date)){
 				this.focusDate.eventsDate.push(this.events[i]);
 			}
 		};
