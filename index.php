@@ -223,7 +223,19 @@ $_SESSION['id_user'] = 11302484;
 					<div id="focusCard"> 
 						{{campusFilterCtrl.focusDate.formatedDate}}
 						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in campusFilterCtrl.focusDate.eventsDate">
-							{{event.name}}
+							<img src="{{event.preview}}" alt="img of {{event.name}}">
+							<h2>{{event.name}}</h2>
+							<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
+							<p class="description"><span class="desc">Description : </span><br />{{event.description}}</p>
+							<?php if(isset($_SESSION['id_user'])) {
+								?>
+								<form action="php/event_inscription.php" method="POST">
+									<input type="text" name="event" value="{{event.name}}">
+									<input type="submit" name="submit" value="INSCRIPTION">
+								</form>
+								<?php
+							}
+							?>
 						</div>
 						<div ng-show="campusFilterCtrl.focusDate.eventsDate.length===0">Y'a rien uesh</div>
 					</div>
