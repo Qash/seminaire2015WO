@@ -35,10 +35,6 @@
 			$http.get('./php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
-    		for (var i = 0; i < this.events.length; i++) {
-				this.events[i].date_debut=moment(this.events[i].date_debut);
-			}
-		};
     		this.focusDate={
 			date:moment(),
 			formatedDate:moment().format("LLLL"),
@@ -51,8 +47,8 @@
 		this.week=[];
 	//INITIALISATION focusDate.events
 		for (var i = 0; i < this.events.length; i++) {
-			if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
-				this.focusDate.eventsDate.push(events[i]);
+			if(this.events[i].date.isSame(this.focusDate.formatedDate)){
+				this.focusDate.eventsDate.push(this.events[i]);
 			}
 		};
 	//FIN INIT focusDate.events
@@ -92,7 +88,7 @@
 				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
-				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
 					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
@@ -135,7 +131,7 @@
 				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
-				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
 					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
@@ -152,7 +148,7 @@
 				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
-				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
 					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
