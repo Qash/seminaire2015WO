@@ -131,11 +131,17 @@ main {
 
 #owl-demo{
 	width: 50%;
+
 	margin: 0 auto;
 	border: 9px solid white;
 	box-shadow: 1px 1px 12px #555;
 	
 	
+}
+
+#owl-demo img {
+	width: 100%;
+	height: 250px;
 }
 
 /* EVENEMENTS */
