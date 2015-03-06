@@ -52,7 +52,7 @@ if(isset($_SESSION['id_user'])) {
 				foreach($data as $row) {
 					$bd_event = $row['name'];
 					if($bd_event == $row['name']) {
-						$req = "INSERT INTO  `11402421-seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
+						$req = "INSERT INTO  `seminaire2015WO`.`RelSubscribe` (`user` ,`event`)VALUES ('".$user."',  '".$event."')";
 					} else {
 						echo ("L'évènement pour lequel vous essayez de vous inscrire n'existe pas.");
 					}
