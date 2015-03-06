@@ -82,9 +82,10 @@ main {
 }
 
 #campusFilter{
+	display: inline-block;
 	width: 100%;
 	text-align: center;
-	margin : 10px;
+	margin-bottom : 10px;
 }
 
 #campusFilter li{
