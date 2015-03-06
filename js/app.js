@@ -1,5 +1,20 @@
 // ANGULAR
 (function(){
+	moment.locale('fr', {
+		months : "Janvier_Fevrier_Mars_Avril_Mai_Juin_Juillet_Aout_Septembre_Octobre_Novembre_Decembre".split("_"),
+		monthsShort : "Janv._Fevr._Mars_Avr._Mai_Juin_Juil._Aout_Sept._Oct._Nov._Dec.".split("_"),
+		weekdays : "Dimanche_Lundi_Mardi_Mercredi_Jeudi_Vendredi_Samedi".split("_"),
+		weekdaysShort : "Dim._Lun._Mar._Mer._Jeu._Ven._Sam.".split("_"),
+		weekdaysMin : "Di_Lu_Ma_Me_Je_Ve_Sa".split("_"),
+		longDateFormat : {
+			LT : "HH:mm",
+			LTS : "HH:mm:ss",
+			L : "DD/MM/YYYY",
+			LL : "D MMMM YYYY",
+			LLL : "D MMMM YYYY LT",
+			LLLL : "dddd D MMMM YYYY"
+		}});
+
 	var app=angular.module('serviceCulturel', ['angular.filter']);
 
 	// CONTROLEUR FILTRES CAMPUS 
@@ -34,6 +49,130 @@
         	$scope.workshops = data;
     	});
 	}]);
+
+	app.controller('CalendarController', function(){
+		this.focusDate={
+			date:moment(),
+			formatedDate:moment().format("LLLL"),
+			month:moment.months()[moment().get('month')],
+			dayOfWeek:moment.weekdays()[moment().get('day')],
+			dayOfMonth:moment().get('date'),
+			year:moment().get('year'),
+			events:[]
+		};
+		this.week=[];
+	//INITIALISATION focusDate.events
+		for (var i = 0; i < CampusFilterController.events.length; i++) {
+			if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
+				this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			}
+		};
+	//FIN INIT focusDate.events
+	//INITIALISATION week
+		for (var j = 3; j > 0; j--) {
+			this.week.push({
+				date:moment(this.focusDate.date).subtract(j,"days"),
+				formatedDate:moment(this.focusDate.date).subtract(j,"days").format("LLLL"),
+				month:moment.months()[moment(this.focusDate.date).subtract(j,"days").get('month')],
+				dayOfWeek:moment.weekdays()[moment(this.focusDate.date).subtract(j,"days").get('day')],
+				dayOfMonth:moment(this.focusDate.date).subtract(j,"days").get('date'),
+				year:moment(this.focusDate.date).subtract(j,"days").get('year'),
+			});
+			
+		};
+		for (var j = 1; j < 4; j++) {
+			this.week.push({
+				date:moment(this.focusDate.date).add(j,"days"),
+				formatedDate:moment(this.focusDate.date).add(j,"days").format("LLLL"),
+				month:moment.months()[moment(this.focusDate.date).add(j,"days").get('month')],
+				dayOfWeek:moment.weekdays()[moment(this.focusDate.date).add(j,"days").get('day')],
+				dayOfMonth:moment(this.focusDate.date).add(j,"days").get('date'),
+				year:moment(this.focusDate.date).add(j,"days").get('year'),
+				
+			});
+		};
+	//FIN INIT week
+
+		this.focusOn=function(dayClicked){
+			this.focusDate={
+				date:dayClicked,
+				formatedDate:dayClicked.format("LLLL"),
+				month:moment.months()[dayClicked.get('month')],
+				dayOfWeek:moment.weekdays()[dayClicked.get('day')],
+				dayOfMonth:dayClicked.get('date'),
+				year:dayClicked.get('year'),
+				events:[]
+			};
+			for (var i = 0; i < CampusFilterController.events.length; i++) {
+				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+				}
+			};
+			this.refreshWeek();
+		};
+
+		this.refreshWeek=function(){
+			this.week=[];
+			for (var j = 3; j > 0; j--) {
+				this.week.push({
+					date:moment(this.focusDate.date).subtract(j,"days"),
+					formatedDate:moment(this.focusDate.date).subtract(j,"days").format("LLLL"),
+					month:moment.months()[moment(this.focusDate.date).subtract(j,"days").get('month')],
+					dayOfWeek:moment.weekdays()[moment(this.focusDate.date).subtract(j,"days").get('day')],
+					dayOfMonth:moment(this.focusDate.date).subtract(j,"days").get('date'),
+					year:moment(this.focusDate.date).subtract(j,"days").get('year')
+				});
+			};
+			for (var j = 1; j < 4; j++) {
+				this.week.push({
+					date:moment(this.focusDate.date).add(j,"days"),
+					formatedDate:moment(this.focusDate.date).add(j,"days").format("LLLL"),
+					month:moment.months()[moment(this.focusDate.date).add(j,"days").get('month')],
+					dayOfWeek:moment.weekdays()[moment(this.focusDate.date).add(j,"days").get('day')],
+					dayOfMonth:moment(this.focusDate.date).add(j,"days").get('date'),
+					year:moment(this.focusDate.date).add(j,"days").get('year')
+
+				});
+			};
+		};
+		this.nextDay=function(){
+			
+			this.focusDate={
+				date:this.focusDate.date.add(1,"d"),
+				formatedDate:this.focusDate.date.format("LLLL"),
+				month:moment.months()[this.focusDate.date.get('month')],
+				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
+				dayOfMonth:this.focusDate.date.get('date'),
+				year:this.focusDate.date.get('year'),
+				events:[]
+			};
+			for (var i = 0; i < CampusFilterController.events.length; i++) {
+				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+				}
+			};
+			this.refreshWeek();
+		};
+		this.prevDay=function(){
+			this.focusDate={
+				date:this.focusDate.date.subtract(1,"d"),
+				formatedDate:this.focusDate.date.format("LLLL"),
+				month:moment.months()[this.focusDate.date.get('month')],
+				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
+				dayOfMonth:this.focusDate.date.get('date'),
+				year:this.focusDate.date.get('year'),
+				events:[]
+			};
+			for (var i = 0; i < CampusFilterController.events.length; i++) {
+				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+				}
+			};
+			this.refreshWeek();
+		};
+		
+
+	});
 	// End
 })();
 
