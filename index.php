@@ -205,7 +205,7 @@ $_SESSION['id_user'] = 11302484;
 							Le paiement de cette redevance permet de pratiquer une ou plusieurs activités du service culturel, de façon forfaitaire, en fonction des places disponibles au moment de votre inscription sur les activités choisies. </p>
 							<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
 							</div>
-							<div ng-show="toggle">
+							<div ng-show="toggle" id="atelierContent">
 							<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"> Retour <i class="fa fa-arrow-circle-left"></i></a></button>
 							<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
 									<h2>{{workshop.name}}</h2>
