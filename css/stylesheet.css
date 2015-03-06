@@ -155,6 +155,14 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 .eventCard img {
 	width: 100%;
 }
+
+.eventCard input[name="submit"] {
+	background-color: #363636;
+	border: 0;
+	color: chartreuse;
+	font: bold 1.4em Josefin;
+}
+
 #event1 {
 	width: 90%;
 }
@@ -178,7 +186,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 
 #event1 input {
 	position: absolute;
-	width: 45%;
 	float: right;
 	bottom: 10%;
 	right: 2%
