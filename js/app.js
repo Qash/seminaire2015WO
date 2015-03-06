@@ -35,23 +35,7 @@
 			$http.get('./php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
-	}]);
-	app.controller('categoryController',['$scope','$http', function($scope,$http){
-		this.RelCategories =[];
-		$http.get('./php/recup_cat.php').success(function(data) {
-        	$scope.RelCategories = data;
-    	});
-	}]);
-	
-	app.controller('ateliersController',['$scope','$http', function($scope,$http){
-		this.workshops =[];
-		$http.get('./php/workshops_call.php').success(function(data) {
-        	$scope.workshops = data;
-    	});
-	}]);
-
-	app.controller('CalendarController', function(){
-		this.focusDate={
+    		this.focusDate={
 			date:moment(),
 			formatedDate:moment().format("LLLL"),
 			month:moment.months()[moment().get('month')],
@@ -62,9 +46,9 @@
 		};
 		this.week=[];
 	//INITIALISATION focusDate.events
-		for (var i = 0; i < CampusFilterController.events.length; i++) {
-			if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-				this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+		for (var i = 0; i < this.events.length; i++) {
+			if(this.events[i].date.isSame(this.focusDate.formatedDate)){
+				this.focusDate.this.eventsDate.push(this.events[i]);
 			}
 		};
 	//FIN INIT focusDate.events
@@ -103,9 +87,9 @@
 				year:dayClicked.get('year'),
 				events:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.this.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -146,9 +130,9 @@
 				year:this.focusDate.date.get('year'),
 				events:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.this.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -163,16 +147,28 @@
 				year:this.focusDate.date.get('year'),
 				events:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
+					this.focusDate.this.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
 		};
-		
+	}]);
+	app.controller('categoryController',['$scope','$http', function($scope,$http){
+		this.RelCategories =[];
+		$http.get('./php/recup_cat.php').success(function(data) {
+        	$scope.RelCategories = data;
+    	});
+	}]);
+	
+	app.controller('ateliersController',['$scope','$http', function($scope,$http){
+		this.workshops =[];
+		$http.get('./php/workshops_call.php').success(function(data) {
+        	$scope.workshops = data;
+    	});
+	}]);
 
-	});
 	// End
 })();
 
