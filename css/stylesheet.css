@@ -131,11 +131,17 @@ main {
 
 #owl-demo{
 	width: 50%;
+
 	margin: 0 auto;
 	border: 9px solid white;
 	box-shadow: 1px 1px 12px #555;
 	
 	
+}
+
+#owl-demo img {
+	width: 100%;
+	height: 250px;
 }
 
 /* EVENEMENTS */
@@ -463,6 +469,28 @@ footer {
 	box-shadow: inset 0px -5px 0px 0px #222;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
 	text-align: left;
+}
+.calendar{
+	width: 70%;
+	margin: auto;
+}
+#focusCard{
+	min-height: 50px;
+	border:solid 1px black;
+	display: block;
+	padding: 10px;
+	color:black;
+}
+
+.dayCard{
+	width: 14.8%;
+	text-align: center;
+	border:solid 1px black;
+	display: inline-block;
+	padding: 10px;
+}
+#focusCard .multipleCard{
+	color:red;
 }
 
 footer ul {

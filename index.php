@@ -218,23 +218,46 @@ $_SESSION['id_user'] = 11302484;
 							</div>
 						</section>
 					</section>
+<<<<<<< HEAD
 				</main>
 				<div class="calendar" ng-controller="CalendarController as clndrCtrl">
 					<button class="calendarDar" ng-click="clndrCtrl.nextDay()">Suivant</button>
+=======
+					<div class="calendar">
+					<button ng-click="campusFilterCtrl.nextDay()">NxtDay</button>
+>>>>>>> af927ab46099a7e9a850d50e870039028b99603a
 					<div id="focusCard"> 
-						{{clndrCtrl.focusDate.formatedDate}}
-						<div ng-class="{multipleCard:clndrCtrl.focusDate.events.length>1}" class="eventCard" ng-repeat="event in clndrCtrl.focusDate.events">
-							{{event.name}}
+						{{campusFilterCtrl.focusDate.formatedDate}}
+						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in campusFilterCtrl.focusDate.eventsDate">
+							<img src="{{event.preview}}" alt="img of {{event.name}}">
+							<h2>{{event.name}}</h2>
+							<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
+							<p class="description"><span class="desc">Description : </span><br />{{event.description}}</p>
+							<?php if(isset($_SESSION['id_user'])) {
+								?>
+								<form action="php/event_inscription.php" method="POST">
+									<input type="text" name="event" value="{{event.name}}">
+									<input type="submit" name="submit" value="INSCRIPTION">
+								</form>
+								<?php
+							}
+							?>
 						</div>
-						<div ng-show="clndrCtrl.focusDate.events.length===0">Y'a rien uesh</div>
+						<div ng-show="campusFilterCtrl.focusDate.eventsDate.length===0">Y'a rien uesh</div>
 					</div>
+<<<<<<< HEAD
 					<button class="calendarDar" ng-click="clndrCtrl.prevDay()">Précédent</button>
+=======
+					<button ng-click="campusFilterCtrl.prevDay()">PrvDay</button>
+>>>>>>> af927ab46099a7e9a850d50e870039028b99603a
 					<br>
-					<div class="dayCard" ng-repeat="day in clndrCtrl.week" ng-click='clndrCtrl.focusOn(day.date)'>
+					<div class="dayCard" ng-repeat="day in campusFilterCtrl.week" ng-click='campusFilterCtrl.focusOn(day.date)'>
 						<h2>{{day.dayOfWeek}}</h2>
 						<h1>{{day.dayOfMonth}}</h1>
 						<h2>{{day.month}}</h2>
 					</div>
+				</main>
+				
 
 					<footer>
 						<ul class="dl">

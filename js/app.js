@@ -35,36 +35,25 @@
 			$http.get('./php/event_call.php').success(function(data) {
         		$scope.events = data;
     		});
-	}]);
-	app.controller('categoryController',['$scope','$http', function($scope,$http){
-		this.RelCategories =[];
-		$http.get('./php/recup_cat.php').success(function(data) {
-        	$scope.RelCategories = data;
-    	});
-	}]);
-	
-	app.controller('ateliersController',['$scope','$http', function($scope,$http){
-		this.workshops =[];
-		$http.get('./php/workshops_call.php').success(function(data) {
-        	$scope.workshops = data;
-    	});
-	}]);
-
-	app.controller('CalendarController', function(){
-		this.focusDate={
+    		
+    		this.focusDate={
 			date:moment(),
 			formatedDate:moment().format("LLLL"),
 			month:moment.months()[moment().get('month')],
 			dayOfWeek:moment.weekdays()[moment().get('day')],
 			dayOfMonth:moment().get('date'),
 			year:moment().get('year'),
-			events:[]
+			eventsDate:[]
 		};
 		this.week=[];
+		for (var i = 0; i < this.events.length; i++) {
+				this.events[i].date_debut=moment(this.events[i].date_debut);
+			}
+		}
 	//INITIALISATION focusDate.events
-		for (var i = 0; i < CampusFilterController.events.length; i++) {
-			if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-				this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+		for (var i = 0; i < this.events.length; i++) {
+			if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+				this.focusDate.eventsDate.push(events[i]);
 			}
 		};
 	//FIN INIT focusDate.events
@@ -101,11 +90,11 @@
 				dayOfWeek:moment.weekdays()[dayClicked.get('day')],
 				dayOfMonth:dayClicked.get('date'),
 				year:dayClicked.get('year'),
-				events:[]
+				eventsDate:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -144,11 +133,11 @@
 				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
 				dayOfMonth:this.focusDate.date.get('date'),
 				year:this.focusDate.date.get('year'),
-				events:[]
+				eventsDate:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
@@ -161,18 +150,30 @@
 				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
 				dayOfMonth:this.focusDate.date.get('date'),
 				year:this.focusDate.date.get('year'),
-				events:[]
+				eventsDate:[]
 			};
-			for (var i = 0; i < CampusFilterController.events.length; i++) {
-				if(CampusFilterController.events[i].date.isSame(this.focusDate.formatedDate)){
-					this.focusDate.CampusFilterController.events.push(CampusFilterController.events[i]);
+			for (var i = 0; i < this.events.length; i++) {
+				if(this.events[i].date_debut.isSame(this.focusDate.formatedDate)){
+					this.focusDate.eventsDate.push(this.events[i]);
 				}
 			};
 			this.refreshWeek();
 		};
-		
+	}]);
+	app.controller('categoryController',['$scope','$http', function($scope,$http){
+		this.RelCategories =[];
+		$http.get('./php/recup_cat.php').success(function(data) {
+        	$scope.RelCategories = data;
+    	});
+	}]);
+	
+	app.controller('ateliersController',['$scope','$http', function($scope,$http){
+		this.workshops =[];
+		$http.get('./php/workshops_call.php').success(function(data) {
+        	$scope.workshops = data;
+    	});
+	}]);
 
-	});
 	// End
 })();
 
@@ -214,6 +215,8 @@ function changePage(arg){
 		$('.information').css('display', 'none');
 		$(".ateliers").fadeTo(500,0,"swing");
 		$('.ateliers').css('display', 'none');
+		$(".calendar").fadeTo(500,0,"swing");
+		$('.calendar').css('display', 'none');
 		$("."+arg.substring(1)).css('display', 'block');
 		$("."+arg.substring(1)).fadeTo(500,1,"swing");
 	}	
