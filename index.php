@@ -84,7 +84,7 @@ $_SESSION['id_user'] = 11302484;
 								<img src="{{event.preview}}" alt="img of {{event.name}}">
 								<h2>{{event.name}}</h2>
 								<p class="date" class="eventDate">{{event.date_debut | date : 'd-MMMM-yyyy'}}</p>
-								<p class="description"><h3>Description :</h3> <br />{{event.description}}</p>
+								<p class="description"><h3>Description : <br /></h3>{{event.description}}</p>
 								<?php if(isset($_SESSION['id_user'])) {
 								?>
 								<form action="php/event_inscription.php" method="POST">
