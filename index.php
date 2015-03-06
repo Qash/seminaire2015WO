@@ -13,9 +13,9 @@ $_SESSION['id_user'] = 11302484;
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.4/angular-filter.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<title>Service Culturel Paris 13</title>
 </head>
 <body>
