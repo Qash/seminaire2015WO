@@ -21,9 +21,9 @@ $_SESSION['id_user'] = 11302484;
 <body>
 	<header>
 		<section id="logo">
-					<a href="#accueil" onclick="changePage(this.hash);"><img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" /></a>
-					<a href="http://www.univ-paris13.fr/" target="_blank"><img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" /></a>
-				</section>
+			<a href="#accueil" onclick="changePage(this.hash);"><img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" /></a>
+			<a href="http://www.univ-paris13.fr/" target="_blank"><img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" /></a>
+		</section>
 		<!-- MENU PRINCIPAL -->
 		<nav id="navSite">
 			<ul>
@@ -207,8 +207,8 @@ $_SESSION['id_user'] = 11302484;
 								<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"><i class="fa fa-arrow-circle-right"></i> Voir les ateliers</a></button>
 							</div>
 							<div ng-show="toggle" id="atelierContent">
-							<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"> Retour <i class="fa fa-arrow-circle-left"></i></a></button>
-							<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
+								<button type="button" id="seeWorkshops"><a ng-click="toggle = !toggle" href="#"> Retour <i class="fa fa-arrow-circle-left"></i></a></button>
+								<div ng-show="toggle" class="atelierCard"  ng-repeat="workshop in workshops" > <!-- ATELIERS -->
 									<h2>{{workshop.name}}</h2>
 									<p>{{workshop.description}}</p>
 									<p><strong>Où :</strong> <br />{{workshop.location}}</p>
@@ -218,20 +218,37 @@ $_SESSION['id_user'] = 11302484;
 							</div>
 						</section>
 					</section>
-			</main>
-			<footer>
-				<ul class="dl">
-					<li><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i>   TÉLÉCHARGER LE PROGRAMME</a></li>
-					<li><a href="https://docs.google.com/forms/d/1h3njDFhLyUj51Afaz9RAo0UBaHAHnqkhxH_Q9c5y1zs/viewform"><i class="fa fa-file-text-o"></i>   QUESTIONNAIRE DE SATISFACTION</a></li>
-					<li><a href="#"><i class="fa fa-gavel"></i>   MENTIONS LÉGALES</a></li>
-					<li><a href="#">CONDITIONS GÉNÉRALES D'UTILISATION</a></li>
-				</ul>
-				<ul class="rsn">
-					<li><a href="#"><i class="fa fa-facebook-square"></i> Sc_Paris13</a></li>
-					<li><a href="#"><i class="fa fa-twitter-square"></i> Sc_Paris13</a></li>
-				</ul>
-				<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
-			</footer>
-	
-	</body>
-</html>
+				</main>
+				<div class="calendar" ng-controller="CalendarController as clndrCtrl">
+					<button ng-click="clndrCtrl.nextDay()">NxtDay</button>
+					<div id="focusCard"> 
+						{{clndrCtrl.focusDate.formatedDate}}
+						<div ng-class="{multipleCard:clndrCtrl.focusDate.events.length>1}" class="eventCard" ng-repeat="event in clndrCtrl.focusDate.events">
+							{{event.name}}
+						</div>
+						<div ng-show="clndrCtrl.focusDate.events.length===0">Y'a rien uesh</div>
+					</div>
+					<button ng-click="clndrCtrl.prevDay()">PrvDay</button>
+					<br>
+					<div class="dayCard" ng-repeat="day in clndrCtrl.week" ng-click='clndrCtrl.focusOn(day.date)'>
+						<h2>{{day.dayOfWeek}}</h2>
+						<h1>{{day.dayOfMonth}}</h1>
+						<h2>{{day.month}}</h2>
+					</div>
+
+					<footer>
+						<ul class="dl">
+							<li><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i>   TÉLÉCHARGER LE PROGRAMME</a></li>
+							<li><a href="https://docs.google.com/forms/d/1h3njDFhLyUj51Afaz9RAo0UBaHAHnqkhxH_Q9c5y1zs/viewform"><i class="fa fa-file-text-o"></i>   QUESTIONNAIRE DE SATISFACTION</a></li>
+							<li><a href="#"><i class="fa fa-gavel"></i>   MENTIONS LÉGALES</a></li>
+							<li><a href="#">CONDITIONS GÉNÉRALES D'UTILISATION</a></li>
+						</ul>
+						<ul class="rsn">
+							<li><a href="#"><i class="fa fa-facebook-square"></i> Sc_Paris13</a></li>
+							<li><a href="#"><i class="fa fa-twitter-square"></i> Sc_Paris13</a></li>
+						</ul>
+						<img src="img/paris13-membre-spc-gris.png" alt="logo paris13 condorcet">
+					</footer>
+
+				</body>
+				</html>
