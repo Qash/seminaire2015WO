@@ -218,14 +218,9 @@ $_SESSION['id_user'] = 11302484;
 							</div>
 						</section>
 					</section>
-<<<<<<< HEAD
 				</main>
 				<div class="calendar" ng-controller="CalendarController as clndrCtrl">
-					<button class="calendarDar" ng-click="clndrCtrl.nextDay()">Suivant</button>
-=======
-					<div class="calendar">
-					<button ng-click="campusFilterCtrl.nextDay()">NxtDay</button>
->>>>>>> af927ab46099a7e9a850d50e870039028b99603a
+					<button class="calendarBtn" ng-click="clndrCtrl.nextDay()">Suivant</button>
 					<div id="focusCard"> 
 						{{campusFilterCtrl.focusDate.formatedDate}}
 						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in campusFilterCtrl.focusDate.eventsDate">
@@ -245,11 +240,7 @@ $_SESSION['id_user'] = 11302484;
 						</div>
 						<div ng-show="campusFilterCtrl.focusDate.eventsDate.length===0">Y'a rien uesh</div>
 					</div>
-<<<<<<< HEAD
-					<button class="calendarDar" ng-click="clndrCtrl.prevDay()">Précédent</button>
-=======
-					<button ng-click="campusFilterCtrl.prevDay()">PrvDay</button>
->>>>>>> af927ab46099a7e9a850d50e870039028b99603a
+					<button class="calendarBtn" ng-click="clndrCtrl.prevDay()">Précédent</button>
 					<br>
 					<div class="dayCard" ng-repeat="day in campusFilterCtrl.week" ng-click='campusFilterCtrl.focusOn(day.date)'>
 						<h2>{{day.dayOfWeek}}</h2>
