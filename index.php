@@ -89,7 +89,7 @@ $_SESSION['id_user'] = 11302484;
 								?>
 								<form action="php/event_inscription.php" method="POST">
 									<input type="text" name="event" value="{{event.name}}">
-									<input type="submit" name="submit" value="inscription">
+									<input type="submit" name="submit" value="INSCRIPTION">
 								</form>
 								<?php
 									}
@@ -108,7 +108,7 @@ $_SESSION['id_user'] = 11302484;
 									?>
 									<form action="php/event_inscription.php" method="POST">
 										<input type="text" name="event" value="{{event.name}}">
-										<input type="submit" name="submit" value="inscription">
+										<input type="submit" name="submit" value="INSCRIPTION">
 									</form>
 									<?php
 									}
@@ -126,7 +126,7 @@ $_SESSION['id_user'] = 11302484;
 									?>
 									<form action="php/event_inscription.php" method="POST">
 										<input type="text" name="event" value="{{event.name}}">
-										<input type="submit" name="submit" value="inscription">
+										<input type="submit" name="submit" value="INSCRIPTION">
 									</form>
 									<?php
 									}
