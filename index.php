@@ -142,7 +142,7 @@ $_SESSION['id_user'] = 11302484;
 					<section class="inscription">
 						<section id="inscriptionContainer">
 							<h1>Inscription</h1>
-							<form id="inscriptionForm" action="php/inscription.php" method="POST">
+							<form id="inscriptionForm" action="php/inscription_sc.php" method="POST">
 								<ul>
 									<li><label for="prenom">Prénom</label> <input type="text" name="firstname" placeholder="Prénom"> </br></li>
 									<li><label for="nom">Nom</label> <input type="text" name="lastname" placeholder="Nom"> </br></li>
