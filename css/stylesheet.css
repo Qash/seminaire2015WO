@@ -394,7 +394,7 @@ font-size: 1em;
 /* ATELIERS */
 
 #atelierContent{
-	margin : auto;
+	margin : 0px 10px 0px 10px;
 }
 
 #seeWorkshops{

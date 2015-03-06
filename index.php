@@ -21,7 +21,7 @@ $_SESSION['id_user'] = 11302484;
 	<body>
 			<header>
 				<section id="logo">
-					<img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" />
+					<a href="#accueil" onclick="changePage(this.hash);"><img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" /></a>
 					<img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" />
 				</section>
 				<!-- MENU PRINCIPAL -->
