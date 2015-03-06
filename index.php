@@ -242,7 +242,7 @@ $_SESSION['id_user'] = 11302484;
 					</div>
 					<button class="calendarBtn" ng-click="campusFilterCtrl.prevDay()">Précédent</button>
 					<br>
-					<div class="dayCard" ng-repeat="day in campusFilterCtrl.week" ng-click='campusFilterCtrl.focusOn(day.date)'>
+					<div class="dayCard" ng-repeat="day in week" ng-click='campusFilterCtrl.focusOn(day.date)'>
 						<h2>{{day.dayOfWeek}}</h2>
 						<h1>{{day.dayOfMonth}}</h1>
 						<h2>{{day.month}}</h2>
