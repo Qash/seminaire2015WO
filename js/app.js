@@ -211,10 +211,13 @@ function changePage(arg){
 		$('#accueil').css('background-color', 'red');
 		$(".inscription").fadeTo(500,0,"swing");
 		$('.inscription').css('display', 'none');
+		$('#inscription').css('background-color', 'red');
 		$(".information").fadeTo(500,0,"swing");
 		$('.information').css('display', 'none');
+		$('#information').css('background-color', 'red');
 		$(".ateliers").fadeTo(500,0,"swing");
 		$('.ateliers').css('display', 'none');
+		$('#ateliers').css('background-color', 'red');
 		$("."+arg.substring(1)).css('display', 'block');
 		$("."+arg.substring(1)).fadeTo(500,1,"swing");
 	}	
