@@ -22,7 +22,7 @@ $_SESSION['id_user'] = 11302484;
 			<header>
 				<section id="logo">
 					<a href="#accueil" onclick="changePage(this.hash);"><img id="logoLeft" src="img/logoSC.png" alt="logo service culturel" /></a>
-					<img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" />
+					<a href="http://www.univ-paris13.fr/" target="_blank"><img id="logoRight" src="img/logoUP13.png" alt="logo univ paris 13" /></a>
 				</section>
 				<!-- MENU PRINCIPAL -->
 				<nav id="navSite">
@@ -221,7 +221,7 @@ $_SESSION['id_user'] = 11302484;
 			<footer>
 				<ul class="dl">
 					<li><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i>   TÉLÉCHARGER LE PROGRAMME</a></li>
-					<li><a href="#"><i class="fa fa-file-text-o"></i>   QUESTIONNAIRE DE SATISFACTION</a></li>
+					<li><a href="https://docs.google.com/forms/d/1h3njDFhLyUj51Afaz9RAo0UBaHAHnqkhxH_Q9c5y1zs/"><i class="fa fa-file-text-o"></i>   QUESTIONNAIRE DE SATISFACTION</a></li>
 					<li><a href="#"><i class="fa fa-gavel"></i>   MENTIONS LÉGALES</a></li>
 					<li><a href="#">CONDITIONS GÉNÉRALES D'UTILISATION</a></li>
 				</ul>
