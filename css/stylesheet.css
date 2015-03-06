@@ -158,9 +158,15 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, St
 
 .eventCard input[name="submit"] {
 	background-color: #363636;
+	margin: 0 auto;
+	padding: 10px;
 	border: 0;
 	color: chartreuse;
 	font: bold 1.4em Josefin;
+}
+
+.eventCard input[name="submit"]:hover {
+	cursor: pointer; 
 }
 
 #event1 {
