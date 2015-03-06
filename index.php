@@ -219,8 +219,8 @@ $_SESSION['id_user'] = 11302484;
 						</section>
 					</section>
 				</main>
-				<div class="calendar" ng-controller="CalendarController as clndrCtrl">
-					<button class="calendarBtn" ng-click="clndrCtrl.nextDay()">Suivant</button>
+				<div class="calendar">
+					<button class="calendarBtn" ng-click="campusFilterCtrl.nextDay()">Suivant</button>
 					<div id="focusCard"> 
 						{{campusFilterCtrl.focusDate.formatedDate}}
 						<div ng-class="{multipleCard:campusFilterCtrl.focusDate.eventsDate.length>1}" class="eventCard" ng-repeat="event in campusFilterCtrl.focusDate.eventsDate">
@@ -240,7 +240,7 @@ $_SESSION['id_user'] = 11302484;
 						</div>
 						<div ng-show="campusFilterCtrl.focusDate.eventsDate.length===0">Y'a rien uesh</div>
 					</div>
-					<button class="calendarBtn" ng-click="clndrCtrl.prevDay()">Précédent</button>
+					<button class="calendarBtn" ng-click="campusFilterCtrl.prevDay()">Précédent</button>
 					<br>
 					<div class="dayCard" ng-repeat="day in campusFilterCtrl.week" ng-click='campusFilterCtrl.focusOn(day.date)'>
 						<h2>{{day.dayOfWeek}}</h2>
@@ -249,8 +249,6 @@ $_SESSION['id_user'] = 11302484;
 					</div>
 					</div>
 				</main>
-				
-
 					<footer>
 						<ul class="dl">
 							<li><a href="files/Programme_culture_sem2.pdf" download><i class="fa fa-arrow-circle-right"></i>   TÉLÉCHARGER LE PROGRAMME</a></li>
