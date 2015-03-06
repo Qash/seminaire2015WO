@@ -220,7 +220,7 @@ $_SESSION['id_user'] = 11302484;
 					</section>
 				</main>
 				<div class="calendar" ng-controller="CalendarController as clndrCtrl">
-					<button ng-click="clndrCtrl.nextDay()">NxtDay</button>
+					<button class="calendarDar" ng-click="clndrCtrl.nextDay()">Suivant</button>
 					<div id="focusCard"> 
 						{{clndrCtrl.focusDate.formatedDate}}
 						<div ng-class="{multipleCard:clndrCtrl.focusDate.events.length>1}" class="eventCard" ng-repeat="event in clndrCtrl.focusDate.events">
@@ -228,7 +228,7 @@ $_SESSION['id_user'] = 11302484;
 						</div>
 						<div ng-show="clndrCtrl.focusDate.events.length===0">Y'a rien uesh</div>
 					</div>
-					<button ng-click="clndrCtrl.prevDay()">PrvDay</button>
+					<button class="calendarDar" ng-click="clndrCtrl.prevDay()">Précédent</button>
 					<br>
 					<div class="dayCard" ng-repeat="day in clndrCtrl.week" ng-click='clndrCtrl.focusOn(day.date)'>
 						<h2>{{day.dayOfWeek}}</h2>

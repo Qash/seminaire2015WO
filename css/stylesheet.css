@@ -433,6 +433,25 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, S
 text-align: center;
 }
 
+/* CALENDAR */
+
+.calendarBtn{
+	cursor : pointer;
+	height : 50px;
+	padding : 5px 10px;
+	margin: 0 auto;
+	margin-bottom : 10px;
+	border : 1px solid #b6b7b9;
+	border-radius : 5px;
+	background-color : #363636;
+	font: bold 1.4em Josefin;
+	display: block;
+}
+
+.calendarBtn a {
+	color : chartreuse;
+}
+
 /* FOOTER */
 footer {
 	position: relative;
