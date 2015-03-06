@@ -140,8 +140,8 @@ main {
 /* EVENEMENTS */
 
 .eventCard {
-
-width: 40%;
+position: relative;
+width: 25%;
 display: inline-table;
 margin: 3%;
 padding: 10px;
@@ -151,6 +151,35 @@ border-radius: 10px;
 -o-box-shadow: 10px 10px 60px 2px #000000;
 box-shadow: 10px 10px 60px 2px #000000;
 filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=60);
+}
+
+#event1 {
+	width: 90%;
+}
+#event1 img {
+	width: 45%;
+}
+
+#event1 h2, #event1 .date {
+	margin: 0;
+	width: 45%;
+	text-align: center;
+}
+
+#event1 .description {
+	position: absolute;
+	width: 45%;
+	float: right;
+	top: 0;
+	right: 0
+}
+
+#event1 input {
+	position: absolute;
+	width: 45%;
+	float: right;
+	bottom: 10%;
+	right: 2%
 }
 
 #eventContainer form input[type="text"] {
