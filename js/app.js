@@ -42,7 +42,7 @@
 			dayOfWeek:moment.weekdays()[moment().get('day')],
 			dayOfMonth:moment().get('date'),
 			year:moment().get('year'),
-			events:[]
+			eventsDate:[]
 		};
 		this.week=[];
 	//INITIALISATION focusDate.events
@@ -85,7 +85,7 @@
 				dayOfWeek:moment.weekdays()[dayClicked.get('day')],
 				dayOfMonth:dayClicked.get('date'),
 				year:dayClicked.get('year'),
-				events:[]
+				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
@@ -128,7 +128,7 @@
 				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
 				dayOfMonth:this.focusDate.date.get('date'),
 				year:this.focusDate.date.get('year'),
-				events:[]
+				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
@@ -145,7 +145,7 @@
 				dayOfWeek:moment.weekdays()[this.focusDate.date.get('day')],
 				dayOfMonth:this.focusDate.date.get('date'),
 				year:this.focusDate.date.get('year'),
-				events:[]
+				eventsDate:[]
 			};
 			for (var i = 0; i < this.events.length; i++) {
 				if(this.events[i].date.isSame(this.focusDate.formatedDate)){
