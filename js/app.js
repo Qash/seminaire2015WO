@@ -210,6 +210,8 @@ function changePage(arg){
 		$('.information').css('display', 'none');
 		$(".ateliers").fadeTo(500,0,"swing");
 		$('.ateliers').css('display', 'none');
+		$(".calendar").fadeTo(500,0,"swing");
+		$('.calendar').css('display', 'none');
 		$("."+arg.substring(1)).css('display', 'block');
 		$("."+arg.substring(1)).fadeTo(500,1,"swing");
 	}	

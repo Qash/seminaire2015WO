@@ -445,6 +445,28 @@ footer {
 	filter:progid:DXImageTransform.Microsoft.Shadow(color=#222, Direction=90, Strength=2);
 	text-align: left;
 }
+.calendar{
+	width: 70%;
+	margin: auto;
+}
+#focusCard{
+	min-height: 50px;
+	border:solid 1px black;
+	display: block;
+	padding: 10px;
+	color:black;
+}
+
+.dayCard{
+	width: 14.8%;
+	text-align: center;
+	border:solid 1px black;
+	display: inline-block;
+	padding: 10px;
+}
+#focusCard .multipleCard{
+	color:red;
+}
 
 footer ul {
 	position: relative;
