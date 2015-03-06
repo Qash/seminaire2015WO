@@ -9,32 +9,13 @@ if(isset($_POST['submit'])){
 			
 			include_once("connexion.inc");
 						
-			$requete = "SELECT `mail` FROM `newsletter`";
-			try {
-				$response = $connexion->prepare($requete);
-				$response->execute();
+			foreach($_POST['category'] as $cat) {
+					$req = "INSERT INTO `RelPreferencies` (`mail` ,`category`,`firstname`,`lastname`)VALUES ('".$mail."',  '".$cat."',  '".$firstname."',  '".$lastname."')";
+					$state = $connexion->prepare($req);
+					$state->execute();
+					header("Location: http://lamp-pedago/html/a2mm/mathieu.brossard/seminaire2015WO/");
 			}
-			catch (Exception $e) {
-				echo $e->getMessage();
-			}
-			
-			$data = $response->fetchAll();
-						
-			foreach($data as $row) {
-				$row_array['mail'] = $row['mail'];
-				if ($row_array['mail'] == $mail) {
-					$mail_exists = true;
-				}
-			}
-			
-			if($mail_exists !== true){
-				$cats[] = $_POST['category'];
-					$query=$connexion->prepare('INSERT INTO RelPreferencies(mail, category) VALUES(:mail, :category)');
-					$query->execute(array (':mail' => $mail, ':category' => $cats[0]));
-					echo ("proute");
-			} else {
-				echo ("t'as déjà un mail !");
-			}
+				
 		} else {
 			echo ("Aucune case selectionné ");
 		}
